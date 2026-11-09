@@ -141,6 +141,7 @@ details .li b{font-weight:600}
 
   function speakNow(){
     if(!window.speechSynthesis || !cur){ return; }
+    stopAudio(null);
     resetSpk();
     try{
       speechSynthesis.cancel();
