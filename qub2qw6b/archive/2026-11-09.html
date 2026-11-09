@@ -25,6 +25,7 @@ p{font-size:17px;line-height:1.95;margin:0 0 16px;overflow-wrap:break-word}
 .trbox{flex-basis:100%;margin-top:8px;background:#f7f8fa;border-left:3px solid #c7d2fe;border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.8;color:#374151}
 .trbox[hidden]{display:none}
 .pa{display:none}
+#wa{display:none}
 figure{margin:0 0 14px}
 figure img{width:100%;display:block;border-radius:10px}
 figcaption{font-size:12px;color:#9ca3af;margin-top:6px;line-height:1.5}
@@ -120,6 +121,7 @@ details .li b{font-weight:600}
 </div>
 <div class="foot"><a href="./archive/" style="color:#6b7280;text-decoration:none">往期归档</a> · 语音由系统朗读（英音优先）</div>
 </div>
+<audio id="wa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-09/words.mp3"></audio>
 <div id="pop"><div class="pw"></div><div class="pi"></div><span class="pp"></span><div class="pc"></div>
 <div class="row"><button class="say" id="say">🔊 英音</button><button id="close">收起</button></div></div>
 <script>
@@ -128,6 +130,27 @@ details .li b{font-weight:600}
   var pw=pop.querySelector('.pw'), pi=pop.querySelector('.pi'), pp=pop.querySelector('.pp'), pc=pop.querySelector('.pc');
   var say=document.getElementById('say'), closeBtn=document.getElementById('close');
   var active=null, cur='', voice=null, spkBtn=null;
+  var wa=document.getElementById('wa'), wmap=null, wdir='';
+  if(wa){
+    wdir=(wa.getAttribute('src')||'').replace(/words\.mp3$/,'');
+    fetch(wdir+'words.json').then(function(r){return r.json();}).then(function(m){wmap=m;}).catch(function(){});
+  }
+
+  function playWord(word){
+    var k=(word||'').toLowerCase();
+    if(!wmap || !wa || !wmap[k]){ return false; }
+    stopAudio(wa);
+    try{ if(window.speechSynthesis){ speechSynthesis.cancel(); } }catch(e){}
+    var t=wmap[k][0]/1000, e=wmap[k][1]/1000;
+    try{
+      wa.currentTime=Math.max(0,t-0.02);
+      var pr=wa.play();
+      if(pr && pr.catch){ pr.catch(function(){}); }
+      clearTimeout(window.__wt);
+      window.__wt=setTimeout(function(){ try{ wa.pause(); }catch(e){} }, Math.max(400,(e-t)*1000+200));
+      return true;
+    }catch(err){ return false; }
+  }
 
   function pickVoice(){
     try{
@@ -145,6 +168,7 @@ details .li b{font-weight:600}
   function resetSpk(){ if(spkBtn){ spkBtn.textContent='朗读'; spkBtn=null; } }
 
   function speakNow(){
+    if(cur && playWord(cur)){ return; }
     if(!window.speechSynthesis || !cur){ return; }
     stopAudio(null);
     resetSpk();
@@ -163,6 +187,7 @@ details .li b{font-weight:600}
     active=null;
     resetSpk();
     try{ if(window.speechSynthesis){ speechSynthesis.cancel(); } }catch(e){}
+    try{ if(wa){ wa.pause(); } }catch(e){}
   }
 
   function place(el){
@@ -226,7 +251,7 @@ details .li b{font-weight:600}
   });
 
   function stopAudio(except){
-    var as=document.querySelectorAll('audio.pa');
+    var as=document.querySelectorAll('audio.pa, #wa');
     for(var i=0;i<as.length;i++){ if(as[i]!==except){ try{as[i].pause(); as[i].currentTime=0;}catch(e){} } }
   }
 
