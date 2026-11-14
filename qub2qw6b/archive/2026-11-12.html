@@ -360,13 +360,57 @@ h1{color:var(--ink)}
 
 .foot a{text-decoration:none;border-bottom:1px solid #B9D3C1;padding-bottom:2px;transition:border-color .18s,color .18s}
 .foot a:hover{color:var(--amber);border-color:var(--amber)}
+
+
+/* ARCHIVE NAV + SEGMENT-ONLY LISTENING */
+.air-right{gap:12px}
+.air-level{white-space:nowrap}
+.archive-link{
+  display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 12px;
+  border-radius:999px;background:#E4F2E8;color:var(--mint);text-decoration:none;
+  font:600 8.5px/1 var(--mono);letter-spacing:.11em;text-transform:uppercase;
+  transition:background .18s,color .18s,transform .18s;white-space:nowrap;
+}
+.archive-link svg{width:11px;height:11px;flex:none}
+.archive-link:hover{background:var(--amber);color:#fff;transform:translateY(-1px)}
+.archive-link:active{transform:translateY(1px)}
+.hero-actions{align-items:center}
+.archive-cta{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:22px;
+  min-width:238px;padding:7px 7px 7px 20px;border:1px solid #D5E6D9;border-radius:999px;
+  background:rgba(255,255,255,.72);color:var(--ink);text-decoration:none;
+  box-shadow:0 12px 30px rgba(31,59,50,.07);transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.archive-cta-copy{display:flex;flex-direction:column;gap:5px}
+.archive-cta-copy small{font:500 8px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.archive-cta-copy strong{font:650 13px/1 var(--display);letter-spacing:.035em;text-transform:uppercase}
+.archive-cta-arrow{
+  display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;
+  border-radius:50%;background:var(--amber);color:#fff;transition:transform .18s,background .18s;
+}
+.archive-cta-arrow svg{width:16px;height:16px}
+.archive-cta:hover{border-color:#B9D3C1;box-shadow:0 16px 36px rgba(31,59,50,.11);transform:translateY(-2px)}
+.archive-cta:hover .archive-cta-arrow{background:#2C5B45;transform:rotate(8deg)}
+.archive-cta:active{transform:translateY(1px)}
+.issue-meta{font:500 9px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.issue-meta b{font-weight:600;color:var(--mint)}
+.log{top:78px}
+.console{padding-top:40px}
+@media(max-width:640px){
+  .air-level{display:none}
+  .archive-link{height:34px;padding:0 12px;font-size:8px}
+  .hero-actions{width:100%;gap:14px}
+  .archive-cta{width:100%;min-width:0}
+  .issue-meta{width:100%;text-align:center}
+  .console{padding-top:28px}
+}
 </style>
 </head><body>
 
 <header class="air">
   <div class="air-left"><span class="live"></span>NIGHT SIGNAL <span class="dim">/</span> 22:00</div>
   <div class="air-mid"><span class="freq">98.6 FM</span><span class="wave" aria-hidden="true"><i style="--h:3px;--d:0.00s"></i><i style="--h:10px;--d:0.09s"></i><i style="--h:3px;--d:0.18s"></i><i style="--h:10px;--d:0.27s"></i><i style="--h:3px;--d:0.36s"></i><i style="--h:10px;--d:0.45s"></i><i style="--h:3px;--d:0.54s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:3px;--d:0.09s"></i><i style="--h:10px;--d:0.18s"></i><i style="--h:3px;--d:0.27s"></i><i style="--h:10px;--d:0.36s"></i><i style="--h:3px;--d:0.45s"></i><i style="--h:10px;--d:0.54s"></i><i style="--h:3px;--d:0.00s"></i><i style="--h:10px;--d:0.09s"></i><i style="--h:3px;--d:0.18s"></i><i style="--h:10px;--d:0.27s"></i><i style="--h:3px;--d:0.36s"></i><i style="--h:10px;--d:0.45s"></i><i style="--h:3px;--d:0.54s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:3px;--d:0.09s"></i><i style="--h:10px;--d:0.18s"></i><i style="--h:3px;--d:0.27s"></i><i style="--h:10px;--d:0.36s"></i><i style="--h:3px;--d:0.45s"></i><i style="--h:10px;--d:0.54s"></i></span></div>
-  <div class="air-right">CEFR B2 <span class="dim">·</span> 03:10</div>
+  <div class="air-right"><span class="air-level">CEFR B2 <span class="dim">·</span> 03:10</span><a class="archive-link" href="/english-reading/qub2qw6b/archive/"><span>Past episodes</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.2 9.8 9.8 2.2M4.1 2.2h5.7v5.7" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
 </header>
 
 <section class="hero">
@@ -375,8 +419,11 @@ h1{color:var(--ink)}
     <h1>Sony&#x27;s $99 Pulse Headset Skips the Extras and Nails the Basics</h1>
     <p class="deck" lang="zh-CN">索尼推出售价 99.99 美元的 PlayStation Pulse 游戏耳机，放弃降噪、可换电池等花哨功能，只专注音质与舒适。它用上了此前只在高端产品上出现的平面磁驱动单元，并可通过 PlayStation Link 与蓝牙同时播放两路音频。文章认为，对预算有限的 PS5 玩家来说，这是一个稳妥的选择。</p>
     <div class="hero-actions">
-      <button class="hero-play" type="button"><span class="ico">▶</span><span class="lbl">Play transcript</span></button>
-      <span class="duration">00:00 <span class="dim">/</span> 03:10</span>
+      <a class="archive-cta" href="/english-reading/qub2qw6b/archive/">
+        <span class="archive-cta-copy"><small>Episode index</small><strong>Past episodes</strong></span>
+        <span class="archive-cta-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="issue-meta"><b>6</b> segments <span class="dim">·</span> 03:10</span>
     </div>
   </div>
   <div class="hero-art">
@@ -384,14 +431,6 @@ h1{color:var(--ink)}
     <div class="big-no" aria-hidden="true">316</div>
   </div>
 </section>
-
-<div class="transport" aria-label="播放控制">
-  <button class="transport-play" type="button"><span class="ic">▶</span><span class="txt">Play all</span></button>
-  <div class="transport-track"><span id="tprogress"></span></div>
-  <span class="transport-time" id="ttime">00:00 / 03:10</span>
-  <span class="transport-seg" id="tseg">SEG 01 / 06</span>
-  <span class="transport-speed" id="speed" role="button" tabindex="0" aria-label="播放速度 0.9 倍">0.9×</span>
-</div>
 
 <main class="console">
   <div class="transcript">
@@ -415,14 +454,7 @@ h1{color:var(--ink)}
   </aside>
 </main>
 
-<footer class="foot"><span>NIGHT SIGNAL · DAILY ENGLISH READING</span><a href="/english-reading/qub2qw6b/archive/">Past episodes →</a><span>PHOTO — THE VERGE · THURSDAY, 12 NOVEMBER 2026</span></footer>
-<div class="player" aria-label="移动端播放控制">
-  <button class="player-play" id="mPlay" type="button" aria-label="播放全文">▶</button>
-  <div class="player-main">
-    <div class="player-top"><span id="mSeg">SEG 01</span><span id="mTime">00:00</span></div>
-    <div class="player-track"><span id="mProgress"></span></div>
-  </div>
-</div>
+<footer class="foot"><span>NIGHT SIGNAL · DAILY ENGLISH READING</span><span>PHOTO — THE VERGE · THURSDAY, 12 NOVEMBER 2026</span></footer>
 
 <div id="pop" role="dialog" aria-label="单词与句子解析"><div class="pw"></div><div class="pi"></div><span class="pp"></span><div class="pc"></div>
 <div class="row"><button class="say" id="say" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6h2l3-2.5v9L5 10H3z"/><path d="M11 6.2c.8.8.8 2.8 0 3.6"/></svg>英音</button><button id="close" type="button">收起</button></div></div>
@@ -649,100 +681,89 @@ h1{color:var(--ink)}
 })();
 </script>
 
+
 <script>
 (function(){
   var audios=[].slice.call(document.querySelectorAll('audio.pa'));
   var segs=[].slice.call(document.querySelectorAll('.segment'));
-  var tprog=document.getElementById('tprogress'), ttime=document.getElementById('ttime'), tseg=document.getElementById('tseg');
-  var pprog=document.getElementById('mProgress'), ptime=document.getElementById('mTime'), pseg=document.getElementById('mSeg');
   var nowTitle=document.getElementById('nowTitle'), nowTime=document.getElementById('nowTime'), nowSeg=document.getElementById('nowSeg');
-  var speedBtn=document.getElementById('speed'), mPlay=document.getElementById('mPlay');
-  var heroBtn=document.querySelector('.hero-play'), transportBtn=document.querySelector('.transport-play');
-  var TOTAL_SECONDS=190;
-  var rate=0.9, current=0, playing=false;
-  function dur(a){ return (a && isFinite(a.duration) && a.duration>0) ? a.duration : (TOTAL_SECONDS/Math.max(1,audios.length)); }
-  function total(){ var t=0; audios.forEach(function(a){ t+=dur(a); }); return t; }
-  function elapsed(){ var t=0; for(var i=0;i<current;i++){ t+=dur(audios[i]); } var a=audios[current]; return t+(a?a.currentTime:0); }
-  function fmt(s){ s=Math.max(0,Math.floor(s)); var m=Math.floor(s/60), x=s%60; return (m<10?'0':'')+m+':'+(x<10?'0':'')+x; }
-  function pad(n){ return (n<10?'0':'')+n; }
-  function paint(){
-    var t=total(), e=elapsed(), pct=t?Math.min(100,e/t*100):0;
-    if(tprog) tprog.style.width=pct+'%';
-    if(pprog) pprog.style.width=pct+'%';
-    if(ttime) ttime.textContent=fmt(e)+' / '+fmt(t);
-    if(ptime) ptime.textContent=fmt(e);
-    if(tseg) tseg.textContent='SEG '+pad(current+1)+' / '+pad(audios.length);
-    if(pseg) pseg.textContent='SEG '+pad(current+1);
-    if(nowTime) nowTime.textContent=fmt(e);
-    if(nowSeg) nowSeg.textContent='SEG '+pad(current+1)+' / '+pad(audios.length);
+  var current=0, playing=false, rate=0.9;
+
+  function fmt(s){
+    s=Math.max(0,Math.floor(s||0));
+    var m=Math.floor(s/60), x=s%60;
+    return (m<10?'0':'')+m+':'+(x<10?'0':'')+x;
   }
-  function setActive(i,scroll){
+  function pad(n){ return (n<10?'0':'')+n; }
+
+  function setNow(i){
     current=Math.max(0,Math.min(i,segs.length-1));
-    segs.forEach(function(s,j){ s.classList.toggle('active', j===current); });
+    segs.forEach(function(s,j){ s.classList.toggle('active',j===current); });
     var t=segs[current]?segs[current].querySelector('.seg-title'):null;
-    if(nowTitle){ nowTitle.textContent=t?t.textContent.replace(/^\s*\d+\s*/,'').trim():'—'; }
-    paint();
-    if(scroll && segs[current]){ try{ segs[current].scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){ segs[current].scrollIntoView(); } }
+    if(nowTitle) nowTitle.textContent=t?t.textContent.replace(/^\s*\d+\s*/,'').trim():'—';
+    if(nowTime) nowTime.textContent='00:00';
+    if(nowSeg) nowSeg.textContent='SEG '+pad(current+1)+' / '+pad(segs.length);
+  }
+
+  function updateButtons(){
+    document.body.classList.toggle('playing',playing);
+    segs.forEach(function(s,j){
+      var b=s.querySelector('.seg-play');
+      var l=s.querySelector('.seg-play .label');
+      var on=playing && j===current;
+      if(l) l.textContent=on?'Pause':'Listen';
+      if(b) b.setAttribute('aria-pressed',on?'true':'false');
+      var svg=s.querySelector('.seg-play svg');
+      if(svg){
+        svg.innerHTML=on
+          ? '<rect x="2.4" y="1.4" width="2.6" height="9.2" fill="currentColor"/><rect x="7" y="1.4" width="2.6" height="9.2" fill="currentColor"/>'
+          : '<path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/>';
+      }
+      s.classList.toggle('playing',on);
+    });
+  }
+
+  function pauseAll(){
+    audios.forEach(function(a){ try{ a.pause(); }catch(e){} });
+    playing=false;
     updateButtons();
   }
-  function updateButtons(){
-    document.body.classList.toggle('playing', playing);
-    segs.forEach(function(s,j){
-      var l=s.querySelector('.seg-play .label');
-      if(l) l.textContent=(playing && j===current)?'Pause':'Listen';
-      var svg=s.querySelector('.seg-play svg');
-      if(svg){ svg.innerHTML=(playing && j===current) ? '<rect x="2.4" y="1.4" width="2.6" height="9.2" fill="currentColor"/><rect x="7" y="1.4" width="2.6" height="9.2" fill="currentColor"/>' : '<path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/>'; }
-      s.classList.toggle('playing', playing && j===current);
-    });
-    if(heroBtn){ var hl=heroBtn.querySelector('.lbl'); if(hl) hl.textContent=playing?'Pause':'Play transcript'; var hi=heroBtn.querySelector('.ico'); if(hi) hi.textContent=playing?'❚❚':'▶'; }
-    if(transportBtn){ var tt=transportBtn.querySelector('.txt'); if(tt) tt.textContent=playing?'Pause':'Play all'; var ic=transportBtn.querySelector('.ic'); if(ic) ic.textContent=playing?'❚❚':'▶'; }
-    if(mPlay) mPlay.textContent=playing?'❚❚':'▶';
-  }
-  function pauseAll(){ audios.forEach(function(a){ try{a.pause();}catch(e){} }); playing=false; updateButtons(); paint(); }
-  function playFrom(i,scroll){
-    audios.forEach(function(a){ try{a.pause();}catch(e){} });
-    current=Math.max(0,Math.min(i,audios.length-1));
-    playing=true;
-    setActive(current,scroll);
+
+  function playSegment(i){
+    pauseAll();
+    setNow(i);
     var a=audios[current];
-    if(!a){ playing=false; updateButtons(); return; }
+    if(!a || !a.getAttribute('src')){ updateButtons(); return; }
+    playing=true;
     try{ a.currentTime=0; a.playbackRate=rate; }catch(e){}
     var p=a.play();
-    if(p && p.catch){ p.catch(function(){ playing=false; updateButtons(); paint(); }); }
+    if(p && p.catch){ p.catch(function(){ playing=false; updateButtons(); }); }
+    updateButtons();
   }
-  function toggle(){
-    if(playing){ pauseAll(); return; }
-    var a=audios[current];
-    if(a && a.currentTime>0 && a.currentTime<dur(a)-0.15){ playing=true; a.playbackRate=rate; a.play(); updateButtons(); return; }
-    playFrom(current,false);
-  }
+
   audios.forEach(function(a,i){
-    a.addEventListener('timeupdate',function(){ if(i===current){ paint(); } });
+    a.addEventListener('timeupdate',function(){
+      if(i===current && nowTime) nowTime.textContent=fmt(a.currentTime);
+    });
     a.addEventListener('ended',function(){
-      if(!playing || i!==current) return;
-      if(i+1<audios.length){ playFrom(i+1,true); }
-      else { playing=false; updateButtons(); paint(); }
+      if(i!==current) return;
+      playing=false;
+      if(nowTime) nowTime.textContent=fmt(a.duration);
+      updateButtons();
     });
   });
+
   document.addEventListener('click',function(e){
     var b=e.target.closest?e.target.closest('.seg-play'):null;
     if(!b) return;
     e.preventDefault(); e.stopPropagation();
     var idx=segs.indexOf(b.closest('.segment'));
-    if(playing && idx===current){ pauseAll(); } else { playFrom(idx,false); }
+    if(playing && idx===current){ pauseAll(); } else { playSegment(idx); }
   },true);
-  if(heroBtn) heroBtn.addEventListener('click',toggle);
-  if(transportBtn) transportBtn.addEventListener('click',toggle);
-  if(mPlay) mPlay.addEventListener('click',toggle);
-  if(speedBtn){
-    speedBtn.addEventListener('click',function(){
-      rate = rate===0.9 ? 1.0 : (rate===1.0 ? 1.1 : 0.9);
-      speedBtn.textContent=rate.toFixed(1)+'×';
-      audios.forEach(function(a){ try{a.playbackRate=rate;}catch(e){} });
-    });
-    speedBtn.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); speedBtn.click(); } });
-  }
-  setActive(0,false); paint();
+
+  setNow(0);
+  updateButtons();
 })();
 </script>
+
 </body></html>
