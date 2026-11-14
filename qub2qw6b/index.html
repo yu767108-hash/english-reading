@@ -1,368 +1,432 @@
-<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#F7F3EA">
+<meta name="theme-color" content="#F4FAF4">
 <meta name="page-type" content="editorial"><meta name="site-kind" content="media">
 <meta name="description" content="索尼推出售价 99.99 美元的 PlayStation Pulse 游戏耳机，放弃降噪、可换电池等花哨功能，只专注音质与舒适。它用上了此前只在高端产品上出现的平面磁驱动单元…">
 <title>2026-11-12 · Sony&#x27;s $99 Pulse Headset Skips the Extras and Nails the Basics · Daily English Reading</title>
-<script>try{var t=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",t||(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));}catch(e){}</script>
+<link rel="stylesheet" href="/english-reading/qub2qw6b/fonts/fonts.css">
 <style>
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
 :root{
-  --paper:#F7F3EA;--paper-2:#EFE8D9;--ink:#17140F;--ink-2:#443D33;
-  --rule:#DDD3C1;--rule-strong:#C4B7A1;--accent:#A83A2A;--accent-ink:#7C2A1E;--muted:#726A5C;
-  --accent-soft:rgba(168,58,42,.09);--card:#FCF9F2;--pop-bg:#191510;--pop-ink:#F7F3EA;
-  --pop-border:rgba(255,255,255,.24);
-  --serif:"Charter","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Songti SC","Noto Serif CJK SC",serif;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-  --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
-  --read:19.5px;--gutter:40px;
-  color-scheme:light;
+ --bg:#08111F;--bg2:#0F1A2B;--panel:#121D30;--ink:#F4EFE4;--soft:#C9D2DF;--muted:#8593A8;
+ --line:#223047;--amber:#FFB24A;--amber2:#FF7A3D;--red:#FF6B57;--mint:#7FE0C3;
+ --ui:'Archivo',system-ui,sans-serif;--display:'Archivo',system-ui,sans-serif;--serif:'Newsreader',Georgia,serif;--mono:'IBM Plex Mono',monospace;
+ --pop-bg:#F4F0E6;--pop-ink:#0B0E13;--pop-accent:#FFB24A;--pop-accent-ink:#0B0E13;--pop-border:rgba(11,14,19,.2);
 }
-[data-theme="dark"]{
-  --paper:#131210;--paper-2:#191713;--ink:#EFE9DD;--ink-2:#CFC6B6;--muted:#9A9081;
-  --rule:#2D2922;--rule-strong:#443D32;--accent:#E0785F;--accent-ink:#F2A28D;
-  --accent-soft:rgba(224,120,95,.13);--card:#1B1916;--pop-bg:#F2EBDF;--pop-ink:#17140F;
-  --pop-border:rgba(0,0,0,.2);
-  color-scheme:dark;
-}
+*{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img{max-width:100%}
 button{font-family:inherit}
-::selection{background:var(--accent);color:#fff}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.skip{position:absolute;left:16px;top:-80px;z-index:220;background:var(--ink);color:var(--paper);padding:12px 16px;font:600 13px/1 var(--sans);text-decoration:none;border-radius:2px;transition:top .15s}
-.skip:focus{top:12px}
-.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:150;pointer-events:none}
-.progress span{display:block;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .1s linear}
-/* masthead */
-.masthead{border-bottom:1px solid var(--ink)}
-.mast-inner{max-width:1320px;margin:0 auto;padding:0 var(--gutter)}
-.mast-main{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding:17px 0 14px}
-.mast-meta{font:600 10px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.mast-date{text-align:right}
-.wordmark{font-family:var(--serif);font-size:27px;line-height:1;letter-spacing:-.015em;text-decoration:none;text-align:center;white-space:nowrap}
-.mast-sub{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0 10px;border-top:1px solid var(--rule)}
-.mast-hint{font:500 10px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.tools{display:flex;gap:6px;align-items:center}
-.tool{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--rule-strong);border-radius:2px;background:transparent;color:var(--ink-2);cursor:pointer;transition:background .18s,color .18s,border-color .18s}
-.tool:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.tool:active{transform:translateY(1px)}
-.tool svg{width:15px;height:15px;display:block}
-.tool.aa{font:600 13px/1 var(--sans);letter-spacing:-.02em}
-[data-theme="light"] .i-sun{display:none}
-[data-theme="dark"] .i-moon{display:none}
-/* page frame */
-.page{max-width:1320px;margin:0 auto;padding:48px var(--gutter) 40px;display:grid;grid-template-columns:196px minmax(0,1fr) 252px;column-gap:56px;align-items:start}
-/* left rail */
-.rail-left{position:sticky;top:28px}
-.dateline{display:flex;flex-direction:column;line-height:1}
-.dow{font:600 10px/1 var(--sans);letter-spacing:.2em;color:var(--accent)}
-.dnum{font-family:var(--serif);font-size:76px;line-height:.92;letter-spacing:-.05em;margin:8px 0 6px;font-weight:400}
-.dmy{font:600 10px/1.4 var(--sans);letter-spacing:.16em;color:var(--muted)}
-.factlist{margin:26px 0 0;padding:0;border-top:1px solid var(--rule)}
-.factlist > div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--rule)}
-.factlist dt{font:500 10px/1.5 var(--sans);letter-spacing:.1em;color:var(--muted)}
-.factlist dd{margin:0;font:600 11px/1.5 var(--sans);color:var(--ink-2);text-align:right}
-.howto{margin-top:22px}
-.howto p{display:flex;gap:8px;align-items:flex-start;margin:0 0 9px;font:400 11px/1.55 var(--sans);color:var(--muted)}
-.hdot{flex:none;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:6px}
-.hmark{flex:none;width:16px;height:16px;border:1px solid var(--accent);color:var(--accent);border-radius:50%;font:600 9px/14px var(--sans);text-align:center;margin-top:0}
-.switch{display:flex;align-items:center;gap:10px;min-height:44px;margin-top:18px;font:500 11.5px/1.4 var(--sans);color:var(--ink-2);cursor:pointer;user-select:none}
-.switch input{position:absolute;opacity:0;width:1px;height:1px}
-.track{position:relative;flex:none;width:38px;height:22px;border:1px solid var(--rule-strong);border-radius:999px;transition:background .18s,border-color .18s}
-.track::after{content:"";position:absolute;left:3px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--muted);transition:transform .18s,background .18s}
-.switch input:checked + .track{background:var(--accent);border-color:var(--accent)}
-.switch input:checked + .track::after{transform:translateX(16px);background:#fff}
-.switch input:focus-visible + .track{outline:2px solid var(--accent);outline-offset:3px}
-.rail-foot{margin-top:26px;padding-top:12px;border-top:1px solid var(--rule);font:400 10px/1.7 var(--sans);color:var(--muted);letter-spacing:.02em}
-/* story */
-.stories{min-width:0;max-width:700px}
-.eyebrow{display:flex;align-items:center;gap:12px;font:600 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.cat{color:var(--accent)}
-.eyebrow .sep{display:block;width:26px;height:1px;background:var(--rule-strong)}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,3.5vw,52px);line-height:1.06;letter-spacing:-.022em;margin:20px 0 0;text-wrap:balance;color:var(--ink)}
-.standfirst{margin:24px 0 0;font-family:var(--sans);font-size:15.5px;line-height:1.9;color:var(--ink-2);text-wrap:pretty}
-.sf-label{display:inline-block;margin-right:10px;font:600 9.5px/1 var(--sans);letter-spacing:.16em;color:var(--accent);vertical-align:1px}
-.byline{margin-top:26px;padding-top:13px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:500 10.5px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.byline a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .18s,color .18s}
-.byline a:hover{color:var(--ink);border-color:var(--ink)}
-.byline .sep{width:4px;height:4px;border-radius:50%;background:var(--rule-strong)}
-.lead{margin:30px 0 36px}
-.fig-credit{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:0 0 8px;font:600 9px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.fig-credit::before{content:"";width:20px;height:1px;background:var(--rule-strong)}
-.frame{overflow:hidden;background:var(--paper-2);outline:1px solid rgba(0,0,0,.06)}
-.frame img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
-.frame:hover img{transform:scale(1.012)}
-[data-theme="dark"] .frame img{filter:brightness(.92) saturate(.95)}
-.typeplate{aspect-ratio:16/9;background:var(--ink);color:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:26px 28px;margin:30px 0 36px}
-.tp-kicker{font:600 9px/1 var(--sans);letter-spacing:.2em;color:var(--accent)}
-.tp-word{font:400 clamp(54px,10vw,96px)/.9 var(--serif);letter-spacing:-.04em}
-.tp-line{height:1px;background:currentColor;opacity:.3}
-/* prose */
-.prose{margin-top:8px}
-.prose p{font-family:var(--serif);font-size:var(--read);line-height:1.88;letter-spacing:.002em;margin:0 0 16px;overflow-wrap:break-word;text-wrap:pretty}
-.prose p.first::first-letter{float:left;font-size:3.25em;line-height:.78;padding:.06em .09em 0 0;color:var(--accent);font-weight:400}
-.w{cursor:pointer;border-radius:2px;transition:background-color .16s,box-shadow .16s,color .16s;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.w:hover{background:var(--accent-soft);box-shadow:inset 0 -1px 0 var(--rule-strong)}
-.w.on{background:var(--accent-soft);box-shadow:inset 0 -1px 0 var(--accent);color:var(--accent-ink)}
-.hard{background:linear-gradient(180deg,transparent 62%,var(--accent-soft) 62%);box-shadow:inset 0 -1px 0 rgba(168,58,42,.28);cursor:pointer}
-[data-theme="dark"] .hard{box-shadow:inset 0 -1px 0 rgba(224,120,95,.32)}
-.hard:hover{background:var(--accent-soft)}
-.hardmark{position:relative;display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:4px;padding:0;border:1px solid var(--accent);border-radius:50%;background:transparent;color:var(--accent);font:600 9.5px/1 var(--sans);vertical-align:4px;cursor:pointer;transition:background .16s,color .16s}
+::selection{background:var(--amber);color:#0B0E13}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.dim{color:#4C5563}
+/* air bar */
+.air{position:sticky;top:0;z-index:60;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;height:54px;padding:0 30px;background:rgba(8,17,31,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.air-left,.air-right{display:flex;align-items:center;gap:10px;font:500 9px/1 var(--mono);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.air-right{justify-content:flex-end}
+.live{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(255,107,87,.14);animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.air-mid{display:flex;align-items:center;gap:12px}
+.freq{font:500 9px/1 var(--mono);letter-spacing:.14em;color:var(--amber)}
+.wave{display:flex;align-items:center;gap:2px;height:18px}
+.wave i{display:block;width:2px;height:var(--h,8px);background:var(--amber);opacity:.8;transform-origin:50% 50%}
+.wave i:nth-child(3n){background:var(--mint)}
+.wave i:nth-child(4n){background:var(--red)}
+.playing .wave i{animation:wave .9s infinite ease-in-out;animation-delay:var(--d,0s)}
+@keyframes wave{0%,100%{transform:scaleY(.5);opacity:.45}50%{transform:scaleY(1.15);opacity:1}}
+/* hero */
+.hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:640px;border-bottom:1px solid var(--line)}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:64px 56px 56px 60px;max-width:800px}
+.kicker{font:500 9px/1.5 var(--mono);letter-spacing:.2em;color:var(--mint);text-transform:uppercase}
+h1{font:800 clamp(44px,4.7vw,74px)/.98 var(--display);letter-spacing:-.045em;text-transform:uppercase;margin:20px 0 0;max-width:820px}
+.deck{font:400 16px/1.9 var(--serif);color:var(--soft);max-width:580px;margin:26px 0 0}
+.hero-actions{display:flex;align-items:center;gap:18px;margin-top:34px;flex-wrap:wrap}
+.hero-play{display:inline-flex;align-items:center;gap:12px;height:52px;padding:0 22px;border:1px solid var(--amber);background:var(--amber);color:#0B0E13;font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:transform .18s,background .18s}
+.hero-play:hover{transform:translateY(-2px);background:#FFC46E}
+.hero-play:active{transform:translateY(1px)}
+.hero-play .ico{font-size:12px}
+.duration{font:500 10px/1 var(--mono);letter-spacing:.1em;color:var(--muted)}
+.hero-art{position:relative;overflow:hidden;background:#000;min-height:520px}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 50%;filter:contrast(1.03) brightness(.92) saturate(1.12)}
+.hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(8,17,31,.12) 22%,transparent 45%),linear-gradient(0deg,rgba(8,17,31,.72),transparent 42%)}
+.big-no{position:absolute;right:18px;bottom:6px;z-index:2;font:800 150px/.8 var(--display);letter-spacing:-.07em;color:transparent;-webkit-text-stroke:1px rgba(127,224,195,.45)}
+/* transport */
+.transport{position:sticky;top:54px;z-index:55;display:grid;grid-template-columns:auto 1fr auto auto auto;gap:16px;align-items:center;height:48px;padding:0 30px;background:rgba(8,17,31,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.transport-play{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border:1px solid var(--amber);background:transparent;color:var(--amber);font:500 9px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .18s,color .18s,transform .18s}
+.transport-play:hover{background:var(--amber);color:#0B0E13;transform:translateY(-1px)}
+.transport-play:active{transform:translateY(1px)}
+.transport-play .ic{font-size:9px}
+.transport-track{height:2px;background:#2A313C;position:relative;min-width:80px}
+.transport-track span{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--amber)}
+.transport-time{font:500 9px/1 var(--mono);letter-spacing:.06em;color:var(--mint);white-space:nowrap}
+.transport-seg{font:500 9px/1 var(--mono);letter-spacing:.06em;color:var(--amber);white-space:nowrap}
+.transport-seg{color:var(--amber)}
+.transport-speed{font:500 9px/1 var(--mono);letter-spacing:.06em;color:var(--mint);border:1px solid #2C4A55;padding:6px 8px;cursor:pointer;user-select:none;white-space:nowrap}
+.transport-speed:hover{border-color:var(--amber);color:var(--amber)}
+/* transcript */
+.console{display:grid;grid-template-columns:minmax(0,700px) 300px;gap:70px;max-width:1160px;margin:0 auto;padding:34px 40px 80px;align-items:start}
+.spectrum{display:flex;gap:4px;margin-bottom:14px}
+.spectrum i{display:block;height:2px}
+.spectrum i:nth-child(1){flex:2;background:var(--amber)}
+.spectrum i:nth-child(2){flex:3;background:var(--mint)}
+.spectrum i:nth-child(3){flex:1;background:var(--red)}
+.transcript-head{display:flex;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--line);font:500 9px/1 var(--mono);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.segment{position:relative;border-bottom:1px solid rgba(34,48,71,.85);transition:background .2s}
+.segment.active{background:linear-gradient(90deg,rgba(255,178,74,.10),rgba(127,224,195,.05) 44%,transparent 72%)}
+.segment.active::before{content:"";position:absolute;left:-18px;top:15px;bottom:15px;width:2px;background:var(--amber)}
+.seg-head{display:grid;grid-template-columns:62px 1fr auto;gap:16px;align-items:center;padding:17px 0 10px}
+.seg-time{font:500 9px/1 var(--mono);color:var(--mint);letter-spacing:.06em}
+.seg-title{font:500 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#7F8DA1;margin:0;min-width:0}
+.seg-title b{color:var(--mint);font-weight:500;margin-right:8px}
+.segment.active .seg-title b{color:var(--amber)}
+.segment.active .seg-title{color:var(--ink)}
+.seg-play{display:inline-flex;align-items:center;gap:7px;height:30px;padding:0 9px;border:1px solid #2C4A55;background:transparent;color:var(--mint);font:500 8px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:border-color .18s,color .18s,background .18s}
+.seg-play svg{width:9px;height:9px;flex:none}
+.seg-play:hover,.segment.playing .seg-play{border-color:var(--amber);color:var(--amber)}
+.seg-play:hover svg,.segment.playing .seg-play svg{color:var(--amber)}
+.seg-body{padding:0 0 18px 78px;min-width:0}
+.seg-body p{font:400 18px/1.9 var(--serif);margin:0;color:#E6E9ED;text-wrap:pretty;overflow-wrap:break-word}
+.segment.lead .seg-body p{font-size:20px;line-height:1.8;color:#F4F0E6}
+.seg-body .para-tools{display:flex;justify-content:flex-start;gap:8px;margin-top:9px;opacity:.78;transition:opacity .18s}
+.segment:hover .para-tools,.para-tools:focus-within{opacity:1}
+.seg-body .trbtn{height:30px;padding:0 10px;border:1px solid #2C4A55;background:transparent;color:var(--mint);font:500 9px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.seg-body .trbtn:hover{background:var(--mint);border-color:var(--mint);color:#08111F}
+.w{cursor:pointer;border-radius:1px;transition:background .16s,box-shadow .16s,color .16s;-webkit-tap-highlight-color:transparent}
+.w:hover{background:rgba(127,224,195,.13);box-shadow:inset 0 -1px 0 var(--mint)}
+.w.on{background:rgba(127,224,195,.18);box-shadow:inset 0 -1px 0 var(--mint);color:var(--mint)}
+.hard{background:linear-gradient(180deg,transparent 61%,rgba(255,107,87,.15) 61%);box-shadow:inset 0 -1px 0 rgba(255,107,87,.42);cursor:pointer}
+.hard:hover{background:rgba(255,107,87,.13)}
+.hardmark{position:relative;display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:5px;padding:0;border:1px solid var(--red);border-radius:50%;background:transparent;color:var(--red);font:600 9px/1 var(--mono);vertical-align:4px;cursor:pointer}
 .hardmark::after{content:"";position:absolute;inset:-11px -9px}
-.hardmark:hover{background:var(--accent);color:var(--paper)}
-.para-tools{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin:-4px 0 24px;opacity:.55;transition:opacity .18s}
-.prose p:hover + .para-tools,.para-tools:hover,.para-tools:focus-within{opacity:1}
-.trbtn,.spk{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 11px;border:1px solid var(--rule-strong);border-radius:2px;background:transparent;color:var(--ink-2);font:500 10.5px/1 var(--sans);letter-spacing:.08em;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
-.trbtn:hover,.spk:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.trbtn:active,.spk:active{transform:translateY(1px)}
+.hardmark:hover{background:var(--red);color:#0B0E13}
 .pa{display:none}
-.trbox{margin:-14px 0 28px;padding:16px 18px;background:var(--card);border-left:2px solid var(--accent);font-family:var(--sans);font-size:14.5px;line-height:1.9;color:var(--ink-2);text-wrap:pretty}
-.trbox::before{content:"参考译文";display:block;margin-bottom:6px;font:600 9px/1 var(--sans);letter-spacing:.16em;color:var(--accent)}
+.trbox{margin:12px 0 0;padding:14px 16px;background:#0D2528;border:1px solid #1E4A47;border-left:2px solid var(--mint);font:400 13.5px/1.85 var(--ui);color:#C8CED6}
+.trbox::before{content:"TRANSLATION / 参考译文";display:block;margin-bottom:6px;font:500 8px/1 var(--mono);letter-spacing:.18em;color:var(--mint)}
 .trbox[hidden]{display:none}
-/* right rail */
-.rail-right{display:flex;flex-direction:column;gap:34px}
-.panel{border-top:1px solid var(--ink);padding-top:12px}
-.panel-title{margin:0 0 16px;font:600 9.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-.panel h3{margin:0 0 8px;font:600 9.5px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.colloc{list-style:none;margin:0;padding:0}
-.colloc li{display:block;padding:11px 0;border-bottom:1px solid var(--rule)}
-.colloc li:last-child{border-bottom:0}
-.colloc .en{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.35;color:var(--ink)}
-.colloc .cn{display:block;margin-top:3px;font:400 11.5px/1.6 var(--sans);color:var(--muted)}
-.gloss{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)}
-.gloss summary{display:flex;align-items:center;gap:8px;cursor:pointer;font:600 11px/1.4 var(--sans);color:var(--ink-2);list-style:none}
+/* now playing + notes */
+.log{position:sticky;top:116px;align-self:start}
+.now{border:1px solid #1E4A47;border-top:2px solid var(--red);background:#0C2428;padding:14px 14px 12px;margin-bottom:24px}
+.now-kicker{display:flex;align-items:center;gap:7px;font:500 8px/1 var(--mono);letter-spacing:.18em;color:var(--red);text-transform:uppercase}
+.now-kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px rgba(255,107,87,.14)}
+.playing .now-kicker .dot{animation:pulse 1.2s infinite}
+.now-title{font:400 18px/1.3 var(--serif);color:var(--ink);margin-top:10px}
+.now-meta{display:flex;justify-content:space-between;gap:10px;margin-top:8px;font:500 8px/1 var(--mono);letter-spacing:.08em;color:var(--muted)}
+.now-meta span:first-child{color:var(--mint)}
+.now-wave{display:flex;align-items:flex-end;gap:2px;height:18px;margin-top:12px}
+.now-wave i{display:block;width:2px;height:var(--h,8px);background:var(--amber);opacity:.6;transform-origin:50% 100%}
+.now-wave i:nth-child(3n){background:var(--mint)}
+.now-wave i:nth-child(4n){background:var(--red)}
+.playing .now-wave i{animation:nowwave .9s infinite ease-in-out;animation-delay:var(--d,0s)}
+@keyframes nowwave{0%,100%{transform:scaleY(.55);opacity:.45}50%{transform:scaleY(1);opacity:1}}
+.log h2{font:500 10px/1 var(--mono);letter-spacing:.2em;color:var(--mint);margin:0 0 18px;text-transform:uppercase}
+.log h3{font:500 8.5px/1 var(--mono);letter-spacing:.18em;color:var(--muted);margin:24px 0 8px;text-transform:uppercase}
+.log-item{padding:9px 0;border-bottom:1px solid var(--line)}
+.log-item .en{font:400 15px/1.35 var(--serif);color:var(--ink)}
+.log-item .cn{font:400 10.5px/1.55 var(--ui);color:var(--muted);margin-top:2px}
+.gloss{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+.gloss summary{display:flex;align-items:center;gap:8px;cursor:pointer;font:500 9px/1.4 var(--mono);letter-spacing:.1em;color:var(--soft);list-style:none;text-transform:uppercase}
 .gloss summary::-webkit-details-marker{display:none}
-.gloss summary span{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border:1px solid var(--rule-strong);border-radius:50%;font:600 9px/1 var(--sans);color:var(--muted)}
-.gloss summary::after{content:"+";font:400 14px/1 var(--sans);color:var(--accent);margin-left:auto}
+.gloss summary span{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;border:1px solid #39424F;border-radius:50%;font-size:8px;color:var(--muted)}
+.gloss summary::after{content:"+";margin-left:auto;color:var(--amber);font-size:14px}
 .gloss[open] summary::after{content:"−"}
-.gloss dl{margin:10px 0 0;padding:0}
-.gloss dl > div{padding:7px 0;border-bottom:1px solid var(--rule)}
-.gloss dl > div:last-child{border-bottom:0}
-.gloss dt{font-family:var(--serif);font-size:13.5px;line-height:1.4;color:var(--ink)}
-.gloss dd{margin:2px 0 0;font:400 11.5px/1.6 var(--sans);color:var(--muted)}
-.review-list{list-style:none;margin:0;padding:0}
-.review-list li{display:grid;grid-template-columns:22px 1fr;grid-template-rows:auto auto;column-gap:6px;padding:10px 0;border-bottom:1px solid var(--rule)}
-.review-list li:last-child{border-bottom:0}
-.review-list .idx{grid-row:1 / span 2;font:500 9px/1 var(--mono);color:var(--accent);padding-top:4px}
-.review-list b{font-family:var(--serif);font-size:14.5px;font-weight:600;line-height:1.3}
-.review-list .meaning{grid-column:2;font:400 11px/1.55 var(--sans);color:var(--muted);margin-top:2px}
-.rail-end{margin:0;padding-top:10px;border-top:1px solid var(--rule);font:400 10px/1.6 var(--sans);letter-spacing:.08em;color:var(--muted)}
-.notes-inline{margin-top:44px}
-/* foot */
-.story-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:16px;border-top:1px solid var(--ink);font:500 10px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.end-mark{font:400 10px/1.5 var(--sans);letter-spacing:.16em;text-transform:uppercase}
-.archive-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--rule-strong);transition:border-color .18s}
-.archive-link:hover{border-color:var(--accent)}
-.archive-link span{transition:transform .18s}
-.archive-link:hover span{transform:translateX(3px)}
-.bottom{margin-top:56px;border-top:1px solid var(--rule)}
-.bottom-in{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1320px;margin:0 auto;padding:20px var(--gutter) 28px;font:400 10px/1.6 var(--sans);letter-spacing:.08em;color:var(--muted)}
-.bottom-in .brand{font-family:var(--serif);font-size:12px;letter-spacing:0;color:var(--ink-2)}
-/* dictionary popover */
-#pop{position:fixed;display:none;z-index:180;width:300px;max-width:calc(100vw - 24px);background:var(--pop-bg);color:var(--pop-ink);padding:18px 18px 14px;border-radius:2px;box-shadow:0 20px 60px rgba(0,0,0,.3),0 2px 8px rgba(0,0,0,.18);font-family:var(--sans);max-height:70vh;overflow:auto}
-#pop.show{display:block;animation:popIn .18s ease-out both}
-@keyframes popIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-#pop .pw{font-family:var(--serif);font-size:24px;line-height:1.1;letter-spacing:-.01em}
-#pop .pi{font-family:var(--serif);font-size:12.5px;font-style:italic;opacity:.72;margin-top:4px}
-#pop .pp{display:inline-block;font-size:11px;opacity:.7;margin-top:3px}
-#pop .pc{margin-top:10px;font-size:13px;line-height:1.7;white-space:pre-line}
-#pop .row{display:flex;gap:8px;margin-top:14px}
-#pop button{flex:1;height:40px;border:1px solid var(--pop-border);background:transparent;color:inherit;font:500 12px/1 var(--sans);border-radius:2px;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
-#pop button:hover{background:rgba(127,127,127,.16)}
-#pop button svg{width:13px;height:13px;vertical-align:-2px;margin-right:4px}
-#pop button.say{background:var(--accent);border-color:var(--accent);color:#fff}
-#pop button.say:hover{filter:brightness(1.08)}
-/* entrance */
-@media (prefers-reduced-motion:no-preference){
-  .story-head{animation:rise .65s cubic-bezier(.2,.7,.2,1) both}
-  .lead,.typeplate{animation:rise .8s .08s cubic-bezier(.2,.7,.2,1) both}
+.gloss dl{margin:8px 0 0;padding:0}
+.gloss-row{padding:7px 0;border-bottom:1px solid var(--line)}
+.gloss-row:last-child{border:0}
+.gloss dt{font:400 12.5px/1.4 var(--serif);color:var(--ink)}
+.gloss dd{margin:2px 0 0;font:400 10px/1.55 var(--ui);color:var(--muted)}
+.review{list-style:none;margin:0;padding:0}
+.review-item{display:grid;grid-template-columns:24px 1fr;grid-template-rows:auto auto;column-gap:6px;padding:8px 0;border-bottom:1px solid var(--line)}
+.review-item .idx{grid-row:1/span 2;font:500 8px/1 var(--mono);color:var(--mint);padding-top:4px}
+.review-item b{font:400 13.5px/1.3 var(--serif);color:var(--ink)}
+.review-item .meaning{grid-column:2;font:400 10px/1.5 var(--ui);color:var(--muted);margin-top:1px}
+/* footer + player */
+.foot{max-width:1160px;margin:0 auto;padding:18px 40px 30px;border-top:1px solid var(--line);font:500 8.5px/1.6 var(--mono);letter-spacing:.18em;color:#5B6472;text-transform:uppercase;display:flex;justify-content:space-between;gap:12px}
+.player{display:none}
+@media(max-width:1100px){
+ .hero{grid-template-columns:1fr;min-height:auto}
+ .hero-copy{padding:48px 36px 40px;max-width:none}
+ .hero-art{min-height:420px}
+ .console{grid-template-columns:minmax(0,700px) 270px;gap:44px;max-width:1050px}
+ .log{top:116px}
 }
-@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
-  .frame:hover img{transform:none}
+@media(max-width:900px){
+ .console{grid-template-columns:1fr;max-width:820px;gap:44px}
+ .log{position:static;display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+ .now{grid-column:1/-1;margin-bottom:0}
+ .log h2{grid-column:1/-1;margin-bottom:0}
 }
-@media (hover:none){.para-tools{opacity:1}
-  .tool:hover{background:transparent;color:var(--ink-2);border-color:var(--rule-strong)}
-  .trbtn:hover,.spk:hover{background:transparent;color:var(--ink-2);border-color:var(--rule-strong)}
-  .frame:hover img{transform:none}}
-/* tablet */
-@media (min-width:1181px) and (max-width:1319px){
-  .page{grid-template-columns:150px minmax(0,1fr) 220px;column-gap:40px}
+@media(max-width:640px){
+ .air{height:48px;padding:0 18px;grid-template-columns:1fr auto}
+ .air-mid{display:none}
+ .air-left{font-size:8px;letter-spacing:.14em}
+ .air-right{font-size:8px;letter-spacing:.1em}
+ .hero-copy{padding:34px 20px 30px}
+ .hero-art{min-height:250px}
+ h1{font-size:clamp(34px,10.4vw,46px);letter-spacing:-.04em;margin-top:16px}
+ .deck{font-size:14.5px;line-height:1.8;margin-top:20px}
+ .hero-actions{margin-top:26px}
+ .hero-play{height:50px;width:100%;justify-content:center}
+ .duration{width:100%;text-align:center}
+ .hero-art{min-height:250px}
+ .big-no{font-size:100px;right:12px;bottom:0}
+ .transport{display:none}
+ .console{padding:26px 20px 92px}
+ .transcript-head{font-size:8px;letter-spacing:.12em}
+ .seg-head{grid-template-columns:42px 1fr auto;gap:8px;padding:14px 0 8px}
+ .seg-time{font-size:8px}
+ .seg-title{font-size:10px;letter-spacing:.08em}
+ .seg-title b{margin-right:5px}
+ .seg-play{width:44px;height:44px;padding:0;justify-content:center}
+ .seg-play .label{display:none}
+ .seg-body{padding:0 0 16px 0}
+ .seg-body p{font-size:17px;line-height:1.85}
+ .segment.lead .seg-body p{font-size:18.5px;line-height:1.8}
+ .seg-body .para-tools{opacity:1;margin-top:7px}
+ .seg-body .trbtn{height:44px;padding:0 13px;font-size:10px}
+ .segment.active::before{left:-8px;top:12px;bottom:12px}
+ .log{grid-template-columns:1fr;gap:24px}
+ .now{margin-bottom:0}
+ .foot{padding:16px 20px 88px;font-size:7.5px;flex-direction:column;gap:4px}
+ .player{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;align-items:center;gap:12px;height:66px;padding:0 16px calc(env(safe-area-inset-bottom));background:rgba(11,14,19,.97);border-top:1px solid var(--line);backdrop-filter:blur(12px)}
+ .player-play{width:44px;height:44px;border:1px solid var(--amber);background:var(--amber);color:#0B0E13;font-size:11px;cursor:pointer;flex:none}
+ .player-main{flex:1;min-width:0}
+ .player-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px;font:500 8px/1 var(--mono);letter-spacing:.1em;color:var(--muted)}
+ .player-top span:first-child{color:var(--amber)}
+ .player-track{height:2px;background:#2B3340;position:relative}
+ .player-track span{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--amber)}
 }
-@media (max-width:1180px){
-  .page{grid-template-columns:170px minmax(0,1fr);grid-template-areas:"left stories" "left notes";column-gap:44px}
-  .rail-left{grid-area:left}
-  .stories{grid-area:stories}
-  .rail-right{grid-area:notes;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start;margin-top:48px}
-  h1{font-size:clamp(38px,4.2vw,44px)}
-  .rail-end{display:none}
-}
-@media (max-width:900px){
-  :root{--gutter:24px}
-  .wordmark{font-size:22px}
-  .page{display:block;padding-top:28px}
-  .rail-left{position:static;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;padding:18px 0 20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin-bottom:34px}
-  .dateline{flex-direction:row;align-items:baseline;gap:10px}
-  .dnum{font-size:46px;margin:0}
-  .dow,.dmy{font-size:9px;letter-spacing:.14em}
-  .factlist{display:flex;gap:18px;margin:0;border:0}
-  .factlist>div{display:block;border:0;padding:0}
-  .factlist dt{font-size:9px}
-  .factlist dd{text-align:left;font-size:10px}
-  .howto,.rail-foot{display:none}
-  .switch{margin:0;justify-self:end}
-  .stories{max-width:720px;margin:0 auto}
-  .rail-right{margin-top:44px}
-  h1{font-size:clamp(34px,6vw,46px)}
-}
-/* phone */
-@media (max-width:640px){
-  :root{--gutter:20px;--read:18.5px}
-  .mast-inner{position:relative}
-  .mast-main{display:flex;flex-wrap:wrap;align-items:center;padding:11px 0 10px;gap:0}
-  .mast-meta{font-size:9px;letter-spacing:.1em}
-  .mast-date{display:none}
-  .wordmark{order:3;flex:1 1 100%;text-align:left;font-size:21px;white-space:normal;margin-top:7px}
-  .mast-sub{position:absolute;top:7px;right:20px;border:0;padding:0}
-  .mast-hint{display:none}
-  .tool{width:44px;height:44px}
-  .tools{gap:4px}
-  .mast-sub .tools{margin-left:auto}
-  .page{padding-top:22px}
-  .rail-left{display:flex;flex-wrap:wrap;gap:12px 16px;padding:14px 0 16px;margin-bottom:26px}
-  .dateline{flex:1 1 100%;justify-content:space-between;align-items:baseline}
-  .dnum{font-size:40px}
-  .factlist{flex:1 1 auto;gap:14px;order:2}
-  .switch{order:3;margin:0 0 0 auto;min-height:44px;font-size:10.5px}
-  h1{font-size:clamp(30px,8.6vw,38px);line-height:1.1;margin-top:16px}
-  .standfirst{font-size:14.5px;margin-top:20px;line-height:1.85}
-  .byline{margin-top:20px}
-  .lead,.typeplate{margin:24px 0 28px}
-  .prose p{line-height:1.84;margin-bottom:14px}
-  .prose p.first::first-letter{font-size:2.9em}
-  .para-tools{opacity:1;margin:-2px 0 20px;gap:8px}
-  .trbtn,.spk{height:44px;padding:0 15px;font-size:11px}
-  .trbox{font-size:14px;padding:15px 16px;margin:-10px 0 26px}
-  .gloss summary{min-height:44px;padding:4px 0}
-  .rail-right{grid-template-columns:1fr;gap:30px}
-  .bottom-in{flex-direction:column;align-items:flex-start;gap:8px;padding-top:18px}
-}
-@media (max-width:420px){
-  .mast-hint{display:none}
-  .factlist{gap:12px}
-  h1{font-size:31px}
-}
-@media (max-width:360px){.wordmark{font-size:19px}}
-/* popover as bottom sheet on phones */
-@media (max-width:640px){
-  #pop.sheet{left:0 !important;right:0 !important;top:auto !important;bottom:0;width:100%;max-width:none;max-height:72vh;border-radius:0;padding:18px 20px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -18px 50px rgba(0,0,0,.25);animation:sheetIn .2s ease-out both}
-  #pop.sheet::before{content:"";display:block;width:34px;height:3px;background:currentColor;opacity:.22;margin:-6px auto 14px}
-  #pop.sheet button{height:44px}
-  @keyframes sheetIn{from{opacity:.4;transform:translateY(24px)}to{opacity:1;transform:none}}
-}
-</style>
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
 
+/* MINT PALETTE */
+:root{
+ --bg:#F4FAF4;--bg2:#EAF4EC;--panel:#FFFFFF;--ink:#1F3B32;--soft:#3F5A4B;--muted:#5F7769;
+ --line:#D5E6D9;--amber:#356B52;--amber2:#5E9C7A;--red:#AD543F;--mint:#2F6B50;
+ --pop-bg:#FBFDF8;--pop-ink:#1F3B32;--pop-accent:#356B52;--pop-accent-ink:#FFFFFF;--pop-border:rgba(31,59,50,.2);--pop-radius:16px;--pop-button-radius:999px;
+}
+body{background:var(--bg);color:var(--ink)}
+::selection{background:#CDE8D6;color:#17352B}
+:focus-visible{outline-color:var(--amber)}
+.air{background:rgba(244,250,244,.93);border-bottom-color:var(--line)}
+.air-left,.air-right{color:var(--muted)}
+.live{background:var(--red);box-shadow:0 0 0 4px rgba(173,84,63,.12)}
+.freq{color:var(--amber)}
+.wave i{background:var(--amber);opacity:.85}
+.wave i:nth-child(3n){background:var(--mint)}
+.wave i:nth-child(4n){background:var(--red)}
+.kicker{color:var(--mint)}
+.hero{background:#F1F8F2;border-bottom-color:var(--line)}
+h1{color:var(--ink)}
+.deck{color:var(--soft)}
+.hero-play{background:var(--amber);border-color:var(--amber);color:#FFFFFF}
+.hero-play:hover{background:#2C5B45}
+.duration{color:var(--muted)}
+.hero-art{background:#E6F0E8}
+.hero-art img{filter:contrast(1.02) brightness(1.0) saturate(1.06)}
+.hero-art::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(244,250,244,.28) 16%,transparent 42%),linear-gradient(0deg,rgba(31,59,50,.16),transparent 38%)}
+.big-no{color:transparent;-webkit-text-stroke:1px rgba(47,107,80,.45)}
+.transport{background:rgba(251,253,248,.96);border-bottom-color:var(--line)}
+.transport-play{color:var(--amber);border-color:var(--amber);background:transparent}
+.transport-play:hover{background:var(--amber);color:#FFFFFF}
+.transport-track{background:#DCEBDD}
+.transport-track span{background:var(--amber)}
+.transport-time{color:var(--mint)}
+.transport-seg{color:var(--amber)}
+.transport-speed{color:var(--mint);border-color:#B9D3C1}
+.transport-speed:hover{border-color:var(--amber);color:var(--amber)}
+.transcript-head{color:var(--muted);border-bottom-color:var(--line)}
+.transcript-head span:first-child{color:var(--mint)}
+.transcript-head span:last-child{color:var(--red)}
+.segment{border-bottom-color:var(--line)}
+.segment.active{background:linear-gradient(90deg,rgba(53,107,82,.075),rgba(47,107,80,.035) 44%,transparent 72%)}
+.segment.active::before{background:var(--amber)}
+.seg-time{color:var(--mint)}
+.seg-title{color:var(--muted)}
+.seg-title b{color:var(--mint)}
+.segment.active .seg-title{color:var(--ink)}
+.segment.active .seg-title b{color:var(--amber)}
+.seg-play{color:var(--mint);border-color:#B9D3C1;background:transparent}
+.seg-play:hover,.segment.playing .seg-play{border-color:var(--amber);color:var(--amber);background:#F0F8F1}
+.seg-body p{color:#2A3B34}
+.segment.lead .seg-body p{color:#17352B}
+.w:hover{background:#E1F2E5;box-shadow:inset 0 -1px 0 var(--mint)}
+.w.on{background:#D6EEDD;box-shadow:inset 0 -1px 0 var(--mint);color:#1F5B43}
+.hard{background:linear-gradient(180deg,transparent 61%,rgba(173,84,63,.14) 61%);box-shadow:inset 0 -1px 0 rgba(173,84,63,.42)}
+.hard:hover{background:rgba(173,84,63,.12)}
+.hardmark{border-color:var(--red);color:var(--red);background:transparent}
+.hardmark:hover{background:var(--red);color:#FFFFFF}
+.seg-body .para-tools{opacity:.85}
+.seg-body .trbtn{color:var(--mint);border-color:#B9D3C1;background:transparent}
+.seg-body .trbtn:hover{background:var(--mint);border-color:var(--mint);color:#FFFFFF}
+.trbox{background:#EAF5EC;border:1px solid #C9DFD0;border-left:2px solid var(--mint);color:#3E5A4B}
+.trbox::before{color:var(--mint)}
+.now{background:#E3F1E7;border:1px solid #C9DFD0;border-top:2px solid var(--red)}
+.now-kicker{color:var(--red)}
+.now-kicker .dot{background:var(--red);box-shadow:0 0 0 3px rgba(173,84,63,.12)}
+.now-title{color:var(--ink)}
+.now-meta{color:var(--muted)}
+.now-meta span:first-child{color:var(--mint)}
+.now-wave i{background:var(--amber);opacity:.7}
+.now-wave i:nth-child(3n){background:var(--mint)}
+.now-wave i:nth-child(4n){background:var(--red)}
+.log h2{color:var(--mint)}
+.log h3{color:var(--muted)}
+.log-item{border-bottom-color:var(--line)}
+.log-item .en{color:var(--ink)}
+.log-item .cn{color:var(--muted)}
+.gloss{border-top-color:var(--line)}
+.gloss summary{color:var(--soft)}
+.gloss summary span{border-color:#B9D3C1;color:var(--muted)}
+.gloss summary::after{color:var(--mint)}
+.gloss-row{border-bottom-color:var(--line)}
+.gloss dt{color:var(--ink)}
+.gloss dd{color:var(--muted)}
+.review-item{border-bottom-color:var(--line)}
+.review-item .idx{color:var(--mint)}
+.review-item b{color:var(--ink)}
+.review-item .meaning{color:var(--muted)}
+.foot{color:var(--muted);border-top-color:var(--line)}
+.player{background:rgba(251,253,248,.97);border-top-color:var(--line)}
+.player-play{background:var(--amber);border-color:var(--amber);color:#FFFFFF}
+.player-top{color:var(--muted)}
+.player-top span:first-child{color:var(--amber)}
+.player-track{background:#DCEBDD}
+.player-track span{background:var(--amber)}
+
+/* SOFT SHAPES */
+.hero-play{height:58px;padding:0;border:0;background:transparent;color:var(--ink);gap:14px;display:inline-flex;align-items:center;box-shadow:none}
+.hero-play .ico{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--amber);color:#fff;font-size:14px;box-shadow:0 10px 22px rgba(53,107,82,.22);transition:transform .18s,box-shadow .18s}
+.hero-play .lbl{font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid #B9D3C1;transition:border-color .18s}
+.hero-play:hover{background:transparent;transform:none}
+.hero-play:hover .ico{transform:scale(1.05);box-shadow:0 12px 26px rgba(53,107,82,.28)}
+.hero-play:hover .lbl{border-color:var(--amber)}
+.hero-play:active{transform:none}
+.hero-play:active .ico{transform:scale(.97)}
+.transport{display:flex;width:min(920px,calc(100% - 40px));height:52px;margin:18px auto 0;padding:0 14px;border:0;border-radius:999px;background:rgba(251,253,248,.94);box-shadow:0 14px 32px rgba(31,59,50,.08);backdrop-filter:blur(12px);gap:14px;top:64px}
+.transport-play{height:32px;padding:0;border:0;background:transparent;color:var(--ink);gap:8px}
+.transport-play .ic{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#E4F2E8;color:var(--amber);font-size:8px;transition:background .18s,color .18s}
+.transport-play:hover{background:transparent;color:var(--ink);transform:none}
+.transport-play:hover .ic{background:var(--amber);color:#fff}
+.transport-track{height:3px;border-radius:999px;overflow:hidden}
+.transport-track span{border-radius:999px}
+.transport-speed{border:0;border-radius:999px;background:#EAF5EC;padding:5px 9px;color:var(--mint)}
+.transport-speed:hover{background:#DCEFE2;color:var(--amber)}
+.seg-play{height:34px;padding:0;border:0;background:transparent;color:var(--mint);gap:7px}
+.seg-play svg{width:26px;height:26px;padding:8px;box-sizing:border-box;border-radius:50%;background:#EAF5EC;color:var(--mint);transition:background .18s,color .18s}
+.seg-play .label{font:500 8px/1 var(--mono);letter-spacing:.1em;padding-bottom:2px;border-bottom:1px solid transparent;transition:border-color .18s}
+.seg-play:hover,.segment.playing .seg-play{background:transparent;color:var(--amber);border-color:transparent}
+.seg-play:hover svg,.segment.playing .seg-play svg{background:var(--amber);color:#fff}
+.seg-play:hover .label{border-color:var(--amber)}
+.seg-body .trbtn{height:32px;padding:0 4px;border:0;border-radius:0;background:transparent;color:var(--mint);text-decoration:underline;text-decoration-color:#B9D3C1;text-underline-offset:4px;text-decoration-thickness:1px}
+.seg-body .trbtn:hover{background:transparent;border:0;color:var(--amber);text-decoration-color:var(--amber)}
+.segment.active{background:#EAF7EE;border-radius:22px;margin:0 -18px;padding:0 18px;border-bottom-color:transparent}
+.segment.active::before{left:6px;top:20px;width:3px;height:22px;border-radius:999px;background:var(--amber)}
+.spectrum i{height:3px;border-radius:999px}
+.trbox{border:0;border-radius:18px 18px 18px 6px;background:linear-gradient(135deg,#EAF5EC 0%,#F7FBF7 100%);box-shadow:0 12px 28px rgba(31,59,50,.07);padding:18px;position:relative}
+.trbox::after{content:"";position:absolute;left:22px;top:-7px;width:14px;height:14px;background:#EAF5EC;transform:rotate(45deg);border-radius:3px}
+.now{border:0;border-radius:24px 24px 24px 8px;background:linear-gradient(135deg,#E3F1E7,#F4FBF5);box-shadow:0 16px 34px rgba(31,59,50,.09);padding:18px 18px 16px;position:relative}
+.now::after{content:"";position:absolute;left:24px;bottom:-8px;width:16px;height:16px;background:#E8F5EC;transform:rotate(45deg);border-radius:3px}
+.player{left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));height:60px;border:0;border-radius:999px;background:rgba(251,253,248,.97);box-shadow:0 16px 34px rgba(31,59,50,.18);padding:0 8px}
+.player-play{width:44px;height:44px;border:0;border-radius:50%;background:var(--amber);color:#fff;box-shadow:0 8px 18px rgba(53,107,82,.2)}
+.player-track{height:3px;border-radius:999px;overflow:hidden}
+.player-track span{border-radius:999px}
+@media(max-width:640px){
+ .transport{display:none}
+ .hero-play{height:58px}
+ .seg-play{width:44px;height:44px}
+ .seg-play svg{width:30px;height:30px;padding:9px}
+ .seg-body .trbtn{height:44px}
+ .segment.active{margin:0 -10px;padding:0 10px;border-radius:16px}
+ .segment.active::before{left:2px;top:16px;height:18px}
+}
+
+
+#pop{position:fixed;display:none;z-index:200;width:300px;max-width:calc(100vw - 24px);background:var(--pop-bg);color:var(--pop-ink);padding:18px;border-radius:var(--pop-radius,2px);box-shadow:0 20px 60px rgba(0,0,0,.38);font-family:var(--ui);max-height:70vh;overflow:auto}
+#pop.show{display:block}
+#pop .pw{font-family:var(--display);font-size:26px;line-height:1.1;letter-spacing:-.01em}
+#pop .pi{font-family:var(--serif);font-size:12px;font-style:italic;opacity:.7;margin-top:4px}
+#pop .pp{display:inline-block;font-size:11px;opacity:.7;margin-top:3px}
+#pop .pc{font-family:var(--ui);font-size:13px;line-height:1.7;margin-top:10px;white-space:pre-line}
+#pop .row{display:flex;gap:8px;margin-top:14px}
+#pop button{flex:1;height:40px;border:1px solid var(--pop-border);background:transparent;color:inherit;font:500 10px/1 var(--mono);letter-spacing:.08em;border-radius:var(--pop-button-radius,2px);cursor:pointer}
+#pop button.say{background:var(--pop-accent);border-color:var(--pop-accent);color:var(--pop-accent-ink)}
+#pop button svg{width:13px;height:13px;vertical-align:-2px;margin-right:4px}
+@media(max-width:640px){
+ #pop.sheet{left:0!important;right:0!important;top:auto!important;bottom:0;width:100%;max-width:none;max-height:74vh;border-radius:0;padding:20px 20px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -18px 50px rgba(0,0,0,.35);animation:sheetIn .2s ease-out both}
+ #pop.sheet::before{content:"";display:block;width:34px;height:3px;background:currentColor;opacity:.22;margin:-6px auto 14px}
+ #pop.sheet button{height:44px}
+ @keyframes sheetIn{from{opacity:.4;transform:translateY(24px)}to{opacity:1;transform:none}}
+}
+
+.foot a{text-decoration:none;border-bottom:1px solid #B9D3C1;padding-bottom:2px;transition:border-color .18s,color .18s}
+.foot a:hover{color:var(--amber);border-color:var(--amber)}
+</style>
 </head><body>
-<a class="skip" href="#story">跳到正文</a>
-<div class="progress" aria-hidden="true"><span id="progbar"></span></div>
-<header class="masthead"><div class="mast-inner">
-<div class="mast-main"><span class="mast-meta">DAILY · NO. 316</span>
-<a class="wordmark" href="./">Daily English Reading</a>
-<span class="mast-meta mast-date">THU · 12 NOV 2026</span></div>
-<div class="mast-sub"><span class="mast-hint">CEFR B2 · 每日一篇 · 点词查义 · 英音朗读</span>
-<div class="tools">
-<button class="tool" id="themeBtn" type="button" aria-label="切换夜间模式"><svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M13.2 9.6A5.4 5.4 0 0 1 6.4 2.8 5.4 5.4 0 1 0 13.2 9.6Z"/></svg><svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.6v1.2M8 13.2v1.2M1.6 8h1.2M13.2 8h1.2M3.5 3.5l.85.85M11.65 11.65l.85.85M12.5 3.5l-.85.85M4.35 11.65l-.85.85"/></svg></button>
-<button class="tool aa" id="sizeBtn" type="button" aria-label="字号：标准，点击切换">Aa</button>
-</div></div></div></header>
-<main class="page" id="main">
-<aside class="rail-left" aria-label="本期信息">
-<div class="dateline"><span class="dow">THURSDAY</span><span class="dnum">12</span><span class="dmy">NOVEMBER 2026</span></div>
-<dl class="factlist">
-<div><dt>难度</dt><dd>CEFR B2</dd></div>
-<div><dt>篇幅</dt><dd>约 3 分钟</dd></div>
-<div><dt>词数</dt><dd>399 词</dd></div>
-</dl>
-<div class="howto"><p><span class="hdot" aria-hidden="true"></span>点按单词，查看释义与英音</p><p><span class="hmark" aria-hidden="true">析</span>点句末标记，展开长难句解析</p><p><span class="hdot" aria-hidden="true"></span>每段下方可展开中文译文</p></div>
-<label class="switch"><input type="checkbox" id="auto" checked><span class="track" aria-hidden="true"></span><span>点词自动发音</span></label>
-<div class="rail-foot">2026年11月12日 · 星期四<br>每日 22:00 更新</div>
-</aside>
-<div class="stories">
-<article class="story" id="story">
-<header class="story-head" data-enter>
-<div class="eyebrow"><span class="cat">TECH</span><span class="sep" aria-hidden="true"></span><span>3 MIN READ</span></div>
-<h1 lang="en">Sony&#x27;s $99 Pulse Headset Skips the Extras and Nails the Basics</h1>
-<p class="standfirst" lang="zh-CN"><span class="sf-label">导读</span>索尼推出售价 99.99 美元的 PlayStation Pulse 游戏耳机，放弃降噪、可换电池等花哨功能，只专注音质与舒适。它用上了此前只在高端产品上出现的平面磁驱动单元，并可通过 PlayStation Link 与蓝牙同时播放两路音频。文章认为，对预算有限的 PS5 玩家来说，这是一个稳妥的选择。</p>
-<div class="byline"><a href="https://www.theverge.com/games/1031291/sony-playstation-pulse-wireless-gaming-headset-hands-on" target="_blank" rel="noopener">The Verge</a><span class="sep" aria-hidden="true"></span><time datetime="2026-11-12">Thursday, 12 November 2026</time></div>
+
+<header class="air">
+  <div class="air-left"><span class="live"></span>NIGHT SIGNAL <span class="dim">/</span> 22:00</div>
+  <div class="air-mid"><span class="freq">98.6 FM</span><span class="wave" aria-hidden="true"><i style="--h:3px;--d:0.00s"></i><i style="--h:10px;--d:0.09s"></i><i style="--h:3px;--d:0.18s"></i><i style="--h:10px;--d:0.27s"></i><i style="--h:3px;--d:0.36s"></i><i style="--h:10px;--d:0.45s"></i><i style="--h:3px;--d:0.54s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:3px;--d:0.09s"></i><i style="--h:10px;--d:0.18s"></i><i style="--h:3px;--d:0.27s"></i><i style="--h:10px;--d:0.36s"></i><i style="--h:3px;--d:0.45s"></i><i style="--h:10px;--d:0.54s"></i><i style="--h:3px;--d:0.00s"></i><i style="--h:10px;--d:0.09s"></i><i style="--h:3px;--d:0.18s"></i><i style="--h:10px;--d:0.27s"></i><i style="--h:3px;--d:0.36s"></i><i style="--h:10px;--d:0.45s"></i><i style="--h:3px;--d:0.54s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:3px;--d:0.09s"></i><i style="--h:10px;--d:0.18s"></i><i style="--h:3px;--d:0.27s"></i><i style="--h:10px;--d:0.36s"></i><i style="--h:3px;--d:0.45s"></i><i style="--h:10px;--d:0.54s"></i></span></div>
+  <div class="air-right">CEFR B2 <span class="dim">·</span> 03:10</div>
 </header>
-<figure class="lead"><div class="fig-credit">PHOTO — The Verge</div><div class="frame"><img src="/english-reading/qub2qw6b/images/2026-11-12/a1.jpg" alt="A dark blue PS5 controller pictured next to a set of black headphones with round ear cups." loading="eager" decoding="async"></div></figure>
-<div class="prose" lang="en">
-<p class="first"><span class="w" data-i="&#x27;geimiŋ" data-p="" data-c="n. 赌博；赌胜负 ｜ [法] 赌博；赌赛">Gaming</span> <span class="w" data-i="ˈhedsets" data-p="" data-c="n. 戴在头上的耳机或听筒( headset的复数形式 )">headsets</span> <span class="w" data-i="&#x27;ɒ:fn" data-p="" data-c="adv. 时常；常常">often</span> <span class="w" data-i="&#x27;prɒmis" data-p="" data-c="n. 诺言；约定的事情；有指望 ｜ vt. 允诺；约定；预示 ｜ vi. 允诺；有前途；有指望">promise</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="du:" data-p="" data-c="v. 做；进行；完成">do</span> <span class="w" data-i="&#x27;evriθiŋ" data-p="" data-c="pron. 每件事物；所有事物">everything</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="wʌns" data-p="" data-c="adv. 一次；曾经；一旦 ｜ conj. 一旦；一经 ｜ n. 一次">once</span>: <span class="w" data-i="nɒiz" data-p="" data-c="n. 噪音；杂音；响声；喧闹 ｜ vt. 谣传 ｜ vi. 喧闹">noise</span> <span class="w" data-i="kænsә&#x27;leiʃәn" data-p="" data-c="n. 取消；作废；注销戳 ｜ [经] 注销；取消；保险单的注销">cancellation</span>, <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">studio-quality</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span>, <span class="w" data-i="" data-p="" data-c="[计] 可交换的">swappable</span> <span class="w" data-i="&#x27;bætә" data-p="" data-c="n. 电池（battery的复数形式）">batteries</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="kә&#x27;nekʃәn" data-p="" data-c="n. 连接；关系（connection的复数形式）；关系学">connections</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="&#x27;evri" data-p="" data-c="a. 每一；所有的">every</span> <span class="w" data-i="kәn&#x27;sәul" data-p="" data-c="vt. 安慰；藉慰 ｜ n. 控制台 ｜ [计] 控制台">console</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="әun" data-p="" data-c="n. 自己的 ｜ a. 自己的；嫡亲的；同胞的 ｜ vt. 拥有；支配；自认；承认">own</span>. <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="nju:" data-p="" data-c="a. 新的；陌生的；最近的；不熟悉的 ｜ [法] 新发现的；新的；重新开始的">new</span> <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="teik" data-p="" data-c="vt. 取走；预备动作（take第三人称单数）">takes</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;nærәu" data-p="" data-c="a. 比较狭窄的（narrow的比较级）">narrower</span> <span class="w" data-i="ә&#x27;prәutʃ" data-p="" data-c="n. 接近；入门 ｜ vt. 接近；近似；找...商量 ｜ vi. 靠近">approach</span>. <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">At</span> $99.99, <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="&#x27;ɒfә" data-p="" data-c="n. 提议；出价；求婚；试图（offer的复数）">offers</span> <span class="w" data-i="tu:" data-p="" data-c="num. 二；二个">two</span> <span class="w" data-i="θiŋ" data-p="" data-c="n. 所有物；财产；用具；用品 ｜ [法] 物">things</span> <span class="w" data-i="dʌn" data-p="" data-c="a. 完成了的；好了的 ｜ do的过去分词">done</span> <span class="w" data-i="wel" data-p="" data-c="n. 井；泉水；源泉；好 ｜ v. 涌出 ｜ a. 健康的；良好的；适宜的；恰当的">well</span>, <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">comfort</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;veri" data-p="" data-c="a. 真正的；恰好的；十足的；特有的 ｜ adv. 非常；完全">very</span> <span class="w" data-i="&#x27;litl" data-p="" data-c="n. 一点点；少许；一会儿；短时间 ｜ a. 小的；很少的；幼小的；琐碎的 ｜ adv. 很少；稍微；完全不">little</span> <span class="w" data-i="els" data-p="" data-c="a. 别的；其他的 ｜ adv. 另外；否则；不然">else</span>. <span class="w" data-i="ðæt" data-p="" data-c="a. 那；那个 ｜ conj. 以致；因为 ｜ pron. 那">That</span> <span class="w" data-i="ri&#x27;streint" data-p="" data-c="n. 抑制；克制；束缚 ｜ [医] 约束；拘束">restraint</span> <span class="w" data-i="mei" data-p="" data-c="n. 五月 ｜ aux. 愿能；可以；愿意">may</span> <span class="w" data-i="bi:" data-p="" data-c="v. 是；表示；在 ｜ [计] 后端；总线允许">be</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="strɒŋ" data-p="" data-c="a. 最强壮的（为strong的最高级）">strongest</span> <span class="w" data-i="&#x27;seliŋ" data-p="" data-c="a. 卖的；销路好的；出售的 ｜ [经] 卖盘；出售；销路好">selling</span> <span class="w" data-i="pɒint" data-p="" data-c="n. 点；小数点；标点；地点 ｜ vt. 弄尖；强调；指出；加标点于 ｜ vi. 指；指向；表明">point</span>, <span class="w" data-i="i&#x27;speʃәli" data-p="" data-c="adv. 尤其；特别；格外">especially</span> <span class="w" data-i="fɒ:" data-p="" data-c="prep. 为；因为；至于 ｜ conj. 因为 ｜ [计] DOS批处理命令:对一组参数重复执行指定的命令">for</span> <span class="w" data-i="&#x27;pleiә" data-p="" data-c="n. 队员；参与者；迷你音碟机；雷射唱盘（player的复数形式）">players</span> <span class="w" data-i="hu:" data-p="" data-c="pron. 谁">who</span> <span class="w" data-i="wɒnt" data-p="" data-c="n. 需要的东西；缺乏；贫困；需要 ｜ vt. 要；希望；应该；缺少 ｜ vi. 生活困苦；需要；缺少">want</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;sɒlid" data-p="" data-c="n. 固体 ｜ a. 坚硬的；稳固的；固体的；实心的 ｜ [计] 原色">solid</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="wi&#x27;ðaut" data-p="" data-c="prep. 没有；不；在...之外 ｜ adv. 在外面；户外 ｜ n. 外面；外部">without</span> <span class="w" data-i="&#x27;peiiŋ" data-p="" data-c="a. 支付的；付款的；有利的；赢利的 ｜ [经] 支付">paying</span> <span class="w" data-i="&#x27;flægʃip" data-p="" data-c="n. 旗舰">flagship</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格（price的复数）">prices</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-1.mp3"></audio>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">EPISODE 316 · THURSDAY, 12 NOVEMBER 2026 · TECH</div>
+    <h1>Sony&#x27;s $99 Pulse Headset Skips the Extras and Nails the Basics</h1>
+    <p class="deck" lang="zh-CN">索尼推出售价 99.99 美元的 PlayStation Pulse 游戏耳机，放弃降噪、可换电池等花哨功能，只专注音质与舒适。它用上了此前只在高端产品上出现的平面磁驱动单元，并可通过 PlayStation Link 与蓝牙同时播放两路音频。文章认为，对预算有限的 PS5 玩家来说，这是一个稳妥的选择。</p>
+    <div class="hero-actions">
+      <button class="hero-play" type="button"><span class="ico">▶</span><span class="lbl">Play transcript</span></button>
+      <span class="duration">00:00 <span class="dim">/</span> 03:10</span>
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="/english-reading/qub2qw6b/images/2026-11-12/a1.jpg" alt="A dark blue PS5 controller pictured next to a set of black headphones with round ear cups.">
+    <div class="big-no" aria-hidden="true">316</div>
+  </div>
+</section>
+
+<div class="transport" aria-label="播放控制">
+  <button class="transport-play" type="button"><span class="ic">▶</span><span class="txt">Play all</span></button>
+  <div class="transport-track"><span id="tprogress"></span></div>
+  <span class="transport-time" id="ttime">00:00 / 03:10</span>
+  <span class="transport-seg" id="tseg">SEG 01 / 06</span>
+  <span class="transport-speed" id="speed" role="button" tabindex="0" aria-label="播放速度 0.9 倍">0.9×</span>
 </div>
-<div class="trbox" hidden>游戏耳机常常承诺样样全能：主动降噪、录音室级音质、可更换电池，还能连上你拥有的每一台游戏机。索尼新推出的 PlayStation Pulse 走的是更窄的路线：99.99 美元的价格，只把音质和佩戴舒适这两件事做好，其他几乎一概不加。这种克制或许正是它最大的卖点，尤其对那些想要一副靠谱耳机、又不想付旗舰价钱的玩家来说。</div>
-<p><span class="hard" data-cn="在它毫不起眼的耳罩里，装着定制的平面磁驱动单元，无论你是在打游戏还是听音乐，都能提供干净、细腻的声音。" data-an="全句为完全倒装：地点状语 Inside its plain ear cups 前置，谓语 sit 提到主语 custom planar magnetic drivers 之前。which 引导非限制性定语从句修饰 drivers；whether ... or ... 引导让步/选择状语从句，说明两种情况都成立。关键词搭配 produce clean, detailed sound。"><span class="w" data-i="&#x27;in&#x27;said" data-p="" data-c="n. 内部；内脏；内幕 ｜ a. 内部的；秘密的；户内的 ｜ adv. 在里面">Inside</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="plein" data-p="" data-c="n. 平原；草原；朴实无华的东西；无格式 ｜ a. 简单的；明白的；平常的；不好看的 ｜ adv. 清楚地；显然地">plain</span> <span class="w" data-i="iә" data-p="" data-c="n. 耳朵；倾听；听觉；穗 ｜ vi. 抽穗">ear</span> <span class="w" data-i="kʌp" data-p="" data-c="n. 拨火罐（器具）；杯子（cup的复数形式）">cups</span> <span class="w" data-i="sit" data-p="" data-c="vi. 坐；就座；坐落 ｜ vt. 使就座；骑 ｜ n. 坐；衣服合身">sit</span> <span class="w" data-i="&#x27;kʌstәm" data-p="" data-c="n. 习惯；风俗；海关；自定义 ｜ a. 定制的 ｜ [计] 定制；自定义">custom</span> <span class="w" data-i="&#x27;pleinә" data-p="" data-c="a. 平面的；在同一平面上的；二维的 ｜ [电] 平面">planar</span> <span class="w" data-i="mæg&#x27;netik" data-p="" data-c="a. 有磁性的；有吸引力的；催眠术的 ｜ [医] 磁[性]的">magnetic</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="[计] 驱动程序">drivers</span>, <span class="w" data-i="hwitʃ" data-p="" data-c="pron. 哪一个；那一个">which</span> <span class="w" data-i="prә&#x27;dju:s" data-p="" data-c="n. 生产品；物产；后代 ｜ vt. 产生；生产；提出；出示 ｜ vi. 生产；制造">produce</span> <span class="w" data-i="kli:n" data-p="" data-c="a. 干净的；清白的；简洁的 ｜ adv. 清洁地；完全地 ｜ vt. 清理；使干净；出空">clean</span>, <span class="w" data-i="&#x27;di:teild" data-p="" data-c="a. 详细的；复杂的 ｜ [法] 详细的；详尽的">detailed</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span> <span class="w" data-i="&#x27;hweðә" data-p="" data-c="conj. 是否；不论 ｜ pron. 两个中的哪一个">whether</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="ɑ:" data-p="" data-c="be的现在时复数或第二人称单数">are</span> <span class="w" data-i="p&#x27;leɪ" data-p="" data-c="n. 游戏；玩耍；竞技；比赛">playing</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="geim" data-p="" data-c="n. 比赛；玩耍；比分；得胜 ｜ vi. 赌博 ｜ a. 勇敢的；有胆量的；关于野味的；跛的">game</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="&#x27;lisniŋ" data-p="" data-c="n. 听；监听 ｜ a. 助听用的">listening</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="&#x27;mju:zik" data-p="" data-c="n. 音乐；乐曲">music</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;tju:niŋ" data-p="" data-c="n. 调音；调谐；协调 ｜ [计] 调整">tuning</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="&#x27;naiðә" data-p="" data-c="adv. 皆不；两个都不 ｜ a. (两者)都不的 ｜ pron. 两者都不">neither</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">bass-heavy</span> <span class="w" data-i="nɒ:" data-p="" data-c="conj. 也不；也没有 ｜ [计] 或非">nor</span> <span class="w" data-i="ʃril" data-p="" data-c="n. 尖声 ｜ a. 尖锐的；刺耳的 ｜ vt. 尖声说出">shrill</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="di&#x27;fɒ:lt" data-p="" data-c="n. 违约；不履行责任；缺席；默认值 ｜ v. 疏怠职责；缺席；拖欠；默认 ｜ [计] 默认；默认值；缺省值">default</span> <span class="w" data-i="&#x27;i:kwәlaizә" data-p="" data-c="n. 使相等的东西；平衡装置；均压器 ｜ [化] 平衡器；均衡器；均压管；均压平衡管">equalizer</span> <span class="w" data-i="saund" data-p="" data-c="n. 音效；声音（sound的复数）">sounds</span> <span class="w" data-i="" data-p="" data-c="a. 有力的；生气勃勃的">punchy</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;pleznt" data-p="" data-c="a. 愉快的；可爱的；活泼的；亲切的">pleasant</span>; <span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">owners</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="stil" data-p="" data-c="n. 蒸馏室；寂静；剧照 ｜ v. 蒸馏；(使)平静；(使)静止 ｜ a. 静止的；不动的；静寂的；不起泡的">still</span> <span class="w" data-i="ә&#x27;dʒʌst" data-p="" data-c="vt. 调整；使适应于；校准 ｜ vi. 适应于；被调节；相互熟悉而适应">adjust</span> <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="θru:" data-p="" data-c="adv. 穿越；从头至尾；到底；因为 ｜ prep. 经过；穿过 ｜ a. 对穿的；直达的；完结的">through</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5 <span class="w" data-i="&#x27;intәfeis" data-p="" data-c="n. 分界面；接触面；界面 ｜ [计] 接口；界面">interface</span>. <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony</span> <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="&#x27;ju:st" data-p="" data-c="a. 使用过的；二手的；习惯的">used</span> <span class="w" data-i="θis" data-p="" data-c="pron. 这；本 ｜ a. 这；本 ｜ adv. 这么">this</span> <span class="w" data-i="" data-p="" data-c="[计] 高端">high-end</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="n. 驾驶员；驱动器；驱动程序 ｜ [化] 驱动器">driver</span> <span class="w" data-i="di&#x27;zain" data-p="" data-c="n. 设计；图样；方案；企图 ｜ v. 设计；计划">design</span> <span class="w" data-i="bi&#x27;fɒ:" data-p="" data-c="prep. 在...之前 ｜ conj. 在...之前 ｜ adv. 在前">before</span>, <span class="w" data-i="&#x27;stɑ:tiŋ" data-p="" data-c="n. 开端；开始；出发；起动 ｜ [机] 开动；起动">starting</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> 2023, <span class="w" data-i="bʌt" data-p="" data-c="prep. 除了 ｜ conj. 但是 ｜ adv. 仅仅">but</span> <span class="w" data-i="&#x27;nevә" data-p="" data-c="adv. 从不；决不；不曾 ｜ [法] 永不；决不；从来没有">never</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="sʌtʃ" data-p="" data-c="a. 如此的；这样的">such</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="lәu" data-p="" data-c="n. 低点；低价；低；牛叫声 ｜ a. 低的；消沉的；低等的；浅的 ｜ adv. 低下地；谦卑地；低">low</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-2.mp3"></audio>
-</div>
-<div class="trbox" hidden>在它毫不起眼的耳罩里，装着定制的平面磁驱动单元，无论你是在打游戏还是听音乐，都能提供干净、细腻的声音。它的调音既不过分强调低频，也不尖利刺耳，默认的均衡器听起来饱满悦耳；用户仍可在 PS5 界面里自行调整。索尼早在 2023 年就用过这种高端驱动设计，但从没有做到这么低的价位。</div>
-<p><span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">Comfort</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;sekәnd" data-p="" data-c="n. 秒；瞬间；第二名；支持者 ｜ a. 第二的；其次的；次要的；附加的 ｜ num. 第二">second</span> <span class="w" data-i="streŋθ" data-p="" data-c="n. 力量；实力；强度；浓度 ｜ [化] 强度">strength</span>. <span class="hard" data-cn="头梁有白色和黑色两种，内侧为柔软的触感材质，头顶承重处留有足够弹性，能把重量分散开。" data-an="主干为 The headband has a soft-touch underside and enough give。available in white or black 是形容词短语作插入语，补充说明头梁的颜色选项。enough give to spread ... 为 enough + 名词 + 不定式结构，give 在这里是名词，意为「弹性」。"><span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;hedbænd" data-p="" data-c="n. 头巾；头饰带 ｜ [医] 额镜带">headband</span>, <span class="w" data-i="ә&#x27;veilәbl" data-p="" data-c="a. 可利用的；可获得的；有效的 ｜ [医] 有效的；可得的">available</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="hwait" data-p="" data-c="n. 白色；洁白；眼白；白种人 ｜ a. 白色的；纯洁的；白种的；苍白的">white</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="blæk" data-p="" data-c="n. 黑色；黑颜料 ｜ a. 黑色的">black</span>, <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">soft-touch</span> <span class="w" data-i="&#x27;ʌndәsaid" data-p="" data-c="n. 下面；下侧；底面">underside</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="i&#x27;nʌf" data-p="" data-c="n. 充足；够；很多 ｜ a. 充足的；足够 ｜ adv. 足够">enough</span> <span class="w" data-i="giv" data-p="" data-c="n. 弹性；适应性 ｜ vt. 给；授予；供给；产生 ｜ vi. 捐赠；支持不住；让步">give</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="spred" data-p="" data-c="n. 传播；散布；伸展 ｜ a. 双唇展开的；伸展的 ｜ vt. 展开；铺开；传播；推广">spread</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="weit" data-p="" data-c="n. 重；重量；体重；砝码 ｜ vt. 加重量于；压迫；使加权；称重量 ｜ [计] 粗细">weight</span> <span class="w" data-i="ә&#x27;krɒs" data-p="" data-c="prep. 越过；穿过；与...相交叉；在...的对面 ｜ adv. 交叉；到另一边；在对面；成十字">across</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="tɒp" data-p="" data-c="n. 顶部；顶端；极点；上面 ｜ a. 最高的；顶上的；头等的 ｜ vt. 盖；加以顶；高达；超越">top</span> <span class="w" data-i="ɒv" data-p="" data-c="prep. 的；属于">of</span> <span class="w" data-i="juә" data-p="" data-c="pron. 你的；你们的">your</span> <span class="w" data-i="hed" data-p="" data-c="n. 头；头脑；领袖；脑袋 ｜ vt. 为首；朝向；前进；用头顶 ｜ vi. 朝特定方向行进；(作物)结穗">head</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="it&#x27;self" data-p="" data-c="pron. 它本身；它自己">itself</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="lait" data-p="" data-c="n. 光；光亮；灯；日光 ｜ a. 轻的；少量的；轻微的；轻快的 ｜ vt. 点燃；照亮">light</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="saiz" data-p="" data-c="n. 大小；尺寸；规模；尺码 ｜ vt. 上浆；依大小排列 ｜ vi. 可比拟">size</span> <span class="w" data-i="əˈdʒʌstmənts" data-p="" data-c="n. 调解( adjustment的复数形式 )；&lt;心&gt;调节；调整；调节器">adjustments</span> <span class="w" data-i="ik&#x27;stend" data-p="" data-c="v. 扩充；延伸；伸展；扩大 ｜ [计] 扩展">extend</span> <span class="w" data-i="fɑ:" data-p="" data-c="a. 远的；久远的；遥远的 ｜ adv. 甚远地；很；到很深的程度；到很远的距离">far</span> <span class="w" data-i="bi&#x27;jɒnd" data-p="" data-c="prep. 超过；在那一边；迟于 ｜ adv. 在远处 ｜ n. 更远处">beyond</span> <span class="w" data-i="hwɒt" data-p="" data-c="pron. 什么 ｜ interj. 怎么；多么 ｜ a. 什么的">what</span> <span class="w" data-i="mәust" data-p="" data-c="n. 最多；最大 ｜ a. 大多数的；几乎全部的；最多的 ｜ adv. 最；最多；极其">most</span> <span class="w" data-i="&#x27;pi:pl" data-p="" data-c="n. 人；人民；民族；平民 ｜ vt. 使住满人；居住于">people</span> <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="&#x27;evә" data-p="" data-c="adv. 曾经；究竟；永远">ever</span> <span class="w" data-i="ni:d" data-p="" data-c="n. 需要；必须；缺乏 ｜ vt. 需要；必需 ｜ vi. 贫困；有必要">need</span>. <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="iә" data-p="" data-c="n. 耳朵；倾听；听觉；穗 ｜ vi. 抽穗">ear</span> <span class="w" data-i="kʌp" data-p="" data-c="n. 拨火罐（器具）；杯子（cup的复数形式）">cups</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="&#x27;i:vәn" data-p="" data-c="a. 平坦的；相等的；连贯的；均等的 ｜ vt. 使平坦；使相等 ｜ vi. 变平；成为相等">even</span> <span class="w" data-i="&#x27;rәuteit" data-p="" data-c="a. 辐状的 ｜ vt. 使旋转；使转动；使轮流 ｜ vi. 旋转；循环">rotate</span> 180 <span class="w" data-i="di&#x27;gri:" data-p="" data-c="n. 角度；学历；度数（degree的复数）">degrees</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="&#x27;i:ðә" data-p="" data-c="a. (两者之中)任一的；(两者之中)各一的 ｜ pron. (两者之中)任一 ｜ conj. 或；要么">either</span> <span class="w" data-i="di&#x27;rekʃәn" data-p="" data-c="n. 方向；指导；趋势 ｜ [计] 方向；流向">direction</span>, <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 面孔的一部分(如眼、口等)；特征；容貌；特色 ｜ vt. 是...的特色；特写；放映 ｜ vi. 起重要作用">feature</span> <span class="w" data-i="ðæt" data-p="" data-c="a. 那；那个 ｜ conj. 以致；因为 ｜ pron. 那">that</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i=".ʌn&#x27;ju:ʒu:l" data-p="" data-c="a. 不寻常的；罕见的；与众不同的">unusual</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="θis" data-p="" data-c="pron. 这；本 ｜ a. 这；本 ｜ adv. 这么">this</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span> <span class="w" data-i="&#x27;brækit" data-p="" data-c="n. 支架；括弧；托架 ｜ vt. 装托架；括入括弧 ｜ [计] 方括号；括号">bracket</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;dʒenjuin" data-p="" data-c="adv. 真诚地；诚实地">genuinely</span> <span class="w" data-i="&#x27;ju:sful" data-p="" data-c="a. 有用的；有益的 ｜ [机] 有用的；有效的">useful</span> <span class="w" data-i="hwen" data-p="" data-c="conj. 当...的时候 ｜ adv. 何时；什么时候 ｜ pron. 什么时侯">when</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="rest" data-p="" data-c="n. 休息；睡眠；安息；稍息 ｜ vi. 休息；睡；长眠；安心 ｜ vt. 使休息；使支撑；把...寄托于">rest</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="ә&#x27;raund" data-p="" data-c="prep. 包围；在...周围；四处 ｜ adv. 兜着圈子；在附近；到处">around</span> <span class="w" data-i="juә" data-p="" data-c="pron. 你的；你们的">your</span> <span class="w" data-i="nek" data-p="" data-c="n. 脖子；衣领；颈 ｜ vi. 拥抱；拥吻；收缩 ｜ vt. 割颈">neck</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-3.mp3"></audio>
-</div>
-<div class="trbox" hidden>舒适是它的第二个强项。头梁有白色和黑色两种，内侧为柔软的触感材质，头顶承重处留有足够弹性，能把重量分散开。耳机本身很轻，尺寸调节范围也远超大多数人的需要。耳罩甚至可以向任意方向旋转 180 度——在这个价位区间并不常见，而当你把耳机挂在脖子上时，这个设计确实好用。</div>
-<p><span class="hard" data-cn="在功能上，Pulse 可以同时通过两条连接串流音频：一条是 PlayStation Link（索尼的低延迟无损无线标准），另一条是普通蓝牙。" data-an="主干是 the Pulse streams audio over two connections。冒号后并列两个名词短语作解释：PlayStation Link 与 ordinary Bluetooth，中间夹着同位语 Sony&#x27;s low-latency, lossless wireless standard 说明前者的性质。at once 意为「同时」。"><span class="w" data-i="&#x27;fʌŋkʃәnәl" data-p="" data-c="adv. 官能；有功能；职务；机能 ｜ [计] 功能地">Functionally</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="stri:m" data-p="" data-c="n. 数据流；流控制（stream复数形式）">streams</span> <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="&#x27;әuvә" data-p="" data-c="adv. 结束；越过；从头到尾 ｜ prep. 在...之上；遍于...之上；越过 ｜ a. 上面的">over</span> <span class="w" data-i="tu:" data-p="" data-c="num. 二；二个">two</span> <span class="w" data-i="kә&#x27;nekʃәn" data-p="" data-c="n. 连接；关系（connection的复数形式）；关系学">connections</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="wʌns" data-p="" data-c="adv. 一次；曾经；一旦 ｜ conj. 一旦；一经 ｜ n. 一次">once</span>: <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="liŋk" data-p="" data-c="n. 环；连结物；链接；火把 ｜ vt. 连结；联合；挽住 ｜ vi. 连接起来">Link</span>, <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">low-latency</span>, <span class="w" data-i="ˈlɒsləs" data-p="" data-c="a. 无损的；无损耗；无耗">lossless</span> <span class="w" data-i="&#x27;waiәlis" data-p="" data-c="n. 无线电 ｜ a. 无线的；无线电的">wireless</span> <span class="w" data-i="&#x27;stændәd" data-p="" data-c="n. 标准；规格；旗；军旗 ｜ a. 标准的；合规格的 ｜ [计] 标准">standard</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;ɒ:dinәri" data-p="" data-c="a. 平常的；普通的；平凡的 ｜ n. 平常的人(或事)">ordinary</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">A</span> <span class="w" data-i="smɒ:l" data-p="" data-c="a. 小的；少的；小型的；低微的 ｜ adv. 些微地 ｜ n. 狭小部分">small</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">USB-C</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span> <span class="w" data-i="pεәz" data-p="" data-c="n. 夫妇；一副（pair的复数）">pairs</span> <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="&#x27;kwikli" data-p="" data-c="adv. 很快地">quickly</span> <span class="w" data-i="wið" data-p="" data-c="prep. 和...在一起；以；由于">with</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5, <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="个人计算机 ｜ [计] 外部控制；个人计算机；光电导体；伪码">PC</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="nin&#x27;tendәj" data-p="" data-c="任天堂">Nintendo</span> <span class="w" data-i="switʃ" data-p="" data-c="n. 开关；电闸；转换；软枝 ｜ vt. 转变；切换；摆动；转换 ｜ vi. 转换；变换；摆动">Switch</span> 2. <span class="hard" data-cn="专用蓝牙按键除了配对，还能暂停或继续蓝牙音源（也可以接听、挂断电话）；而音量拨轮只在没有 Link 设备连接时才控制蓝牙音量。" data-an="两个并列分句由 while 连接，表示对比：前一分句主语 A dedicated Bluetooth button 带两个谓语（pauses or resumes ... and can also answer）。whenever no Link device is connected 是时间状语从句。注意 while 在此不是「当……时」，而是对比连词。"><span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">A</span> <span class="w" data-i="&#x27;dedikeitid" data-p="" data-c="a. 专注的；献身的">dedicated</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="&#x27;bʌtәn" data-p="" data-c="n. 钮扣；按钮 ｜ vi. 扣住 ｜ vt. 钉钮扣于；扣紧">button</span> <span class="w" data-i="pɔ:ziz" data-p="" data-c="n. 停顿( pause的名词复数 )；暂停；延长记号；暂停键 ｜ v. 停顿( pause的第三人称单数 )；暂停；（按暂停键）暂停放音；暂停放像">pauses</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="ri&#x27;zju:m" data-p="" data-c="n. 简历；个人履历（resume的复数）">resumes</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="kәn&#x27;tent" data-p="" data-c="n. 内容；满足；意义；要旨 ｜ a. 满足的；满意的 ｜ vt. 使...满足；使...安心">content</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="&#x27;ɒ:lsәu" data-p="" data-c="adv. 也；并且；同样地">also</span> <span class="w" data-i="&#x27;ɑ:nsә" data-p="" data-c="n. 答案；回答；回报；答辩 ｜ vt. 回答；反驳；适应；响应 ｜ vi. 回答；答应；负责；符合">answer</span> <span class="w" data-i="kɒ:l" data-p="" data-c="n. 调用；呼吁；电话（call的复数）">calls</span>, <span class="w" data-i="hwail" data-p="" data-c="n. 一会儿；(一段)时间 ｜ conj. 当...的时候；虽然 ｜ vt. 消磨">while</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;vɒljum" data-p="" data-c="n. 册；卷；体积；容量 ｜ vi. 成团卷起 ｜ vt. 把...收集成卷">volume</span> <span class="w" data-i="&#x27;rɒkә" data-p="" data-c="n. 摇的人；摇杆 ｜ [电] 摇杆">rocker</span> <span class="w" data-i="kәn&#x27;trәul" data-p="" data-c="n. 控制；控制元件；控制装置（control的复数）">controls</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="hwen&#x27;evә" data-p="" data-c="conj. 每当 ｜ adv. 不论何时；每逢">whenever</span> <span class="w" data-i="nәu" data-p="" data-c="n. 不；拒绝；否决票 ｜ a. 没有；不是；绝非 ｜ adv. 不">no</span> <span class="w" data-i="liŋk" data-p="" data-c="n. 环；连结物；链接；火把 ｜ vt. 连结；联合；挽住 ｜ vi. 连接起来">Link</span> <span class="w" data-i="di&#x27;vais" data-p="" data-c="n. 装置；设计；策略；发明物 ｜ [计] 设备；DOS内部命令:该命令要求DOS安装一个设备驱动程序">device</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="kә&#x27;nektid" data-p="" data-c="a. 连接的；连贯的；有联系的；关联的 ｜ [计] 连接的">connected</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">In</span> <span class="w" data-i=".simәl&#x27;teinjәs" data-p="" data-c="a. 同时的；同时发生的 ｜ [计] 同时的">simultaneous</span> <span class="w" data-i="mәud" data-p="" data-c="n. 模态；调式；样式；文体 ｜ [计] 方式；DOS外部命令:设定各种设备命令">mode</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="seim" data-p="" data-c="a. 相同的；同样的 ｜ pron. 相同的人(或事物) ｜ adv. 同样地">same</span> <span class="w" data-i="&#x27;rɒkә" data-p="" data-c="n. 摇的人；摇杆 ｜ [电] 摇杆">rocker</span> <span class="w" data-i="əˈdʒʌsts" data-p="" data-c="v. （改变…以）适应；调整；校正( adjust的第三人称单数 )">adjusts</span> <span class="w" data-i="&#x27;әunli" data-p="" data-c="a. 唯一的；仅有的；最佳的 ｜ adv. 只有；仅仅；只能 ｜ conj. 但是；不过">only</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="di&#x27;vais" data-p="" data-c="n. 装置；设计；策略；发明物 ｜ [计] 设备；DOS内部命令:该命令要求DOS安装一个设备驱动程序">device</span> <span class="w" data-i="ә&#x27;tætʃt" data-p="" data-c="a. 附加的；依恋的；充满爱心的">attached</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-4.mp3"></audio>
-</div>
-<div class="trbox" hidden>在功能上，Pulse 可以同时通过两条连接串流音频：一条是 PlayStation Link（索尼的低延迟无损无线标准），另一条是普通蓝牙。它附带一个小巧的 USB-C 适配器，插上 PS5、个人电脑或任天堂 Switch 2 就能快速配对。专用蓝牙按键除了配对，还能暂停或继续蓝牙音源（也可以接听、挂断电话）；而音量拨轮只在没有 Link 设备连接时才控制蓝牙音量。在同时播放模式下，同一拨轮只调节接在适配器上的设备。</div>
-<p><span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">Owners</span> <span class="w" data-i="ɒv" data-p="" data-c="prep. 的；属于">of</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="&#x27;pɒ:tl" data-p="" data-c="n. 入口；大门 ｜ a. 肝门的">Portal</span> <span class="w" data-i="hændheld" data-p="" data-c="a. 掌上型；手持型">handheld</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="kә&#x27;nekt" data-p="" data-c="v. 连接；联合；联系">connect</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="di&#x27;rektli, dai&#x27;rektli" data-p="" data-c="adv. 径直地；直接地；直率地；正好地 ｜ conj. 一...(就...)；一当...就... ｜ [计] 直接的">directly</span>, <span class="w" data-i="wi&#x27;ðaut" data-p="" data-c="prep. 没有；不；在...之外 ｜ adv. 在外面；户外 ｜ n. 外面；外部">without</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="ɒ:l" data-p="" data-c="a. 所有的；全部的；一切的 ｜ adv. 全部；全然 ｜ pron. 全部">all</span>. <span class="w" data-i="nɒ:" data-p="" data-c="conj. 也不；也没有 ｜ [计] 或非">Nor</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="&#x27;әunli" data-p="" data-c="a. 唯一的；仅有的；最佳的 ｜ adv. 只有；仅仅；只能 ｜ conj. 但是；不过">only</span> <span class="w" data-i="nju:" data-p="" data-c="a. 新的；陌生的；最近的；不熟悉的 ｜ [法] 新发现的；新的；重新开始的">new</span> <span class="w" data-i="&#x27;mɒdәl" data-p="" data-c="n. 模型；模范；模特儿 ｜ a. 模范的；作模型用的 ｜ vi. 做模型；做模特儿">model</span>. <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="edʒ" data-p="" data-c="n. 边缘；尖锐；刀刃；优势 ｜ vt. 使锐利；挤进；镶边 ｜ vi. 缓缓移动">Edge</span>, <span class="w" data-i="hwitʃ" data-p="" data-c="pron. 哪一个；那一个">which</span> <span class="w" data-i="stil" data-p="" data-c="n. 蒸馏室；寂静；剧照 ｜ v. 蒸馏；(使)平静；(使)静止 ｜ a. 静止的；不动的；静寂的；不起泡的">still</span> <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="nәu" data-p="" data-c="n. 不；拒绝；否决票 ｜ a. 没有；不是；绝非 ｜ adv. 不">no</span> <span class="w" data-i="lɒ:ntʃ" data-p="" data-c="n. 下水；汽艇；发射 ｜ vt. 使下水；发射；发动 ｜ vi. 起飞；下水；投入；开始">launch</span> <span class="w" data-i="deit" data-p="" data-c="n. 日期；约会；枣椰树 ｜ vt. 约会；定日期 ｜ vi. 注明日期；过时">date</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span>, <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="pæk" data-p="" data-c="n. 包裹；一伙；一副；背包 ｜ vt. 包装；捆扎；塞满；压紧 ｜ vi. 包装货物；挤；群集；被包装">pack</span> <span class="w" data-i="twais" data-p="" data-c="adv. 两次；两倍">twice</span> <span class="w" data-i="æz" data-p="" data-c="adv. 同样地；例如 ｜ prep. 做为；当作 ｜ conj. 当...之时；以...的方式；像...一样；因为">as</span> <span class="w" data-i="&#x27;meni" data-p="" data-c="n. 多数；多数人 ｜ a. 许多的 ｜ pron. 许多">many</span> <span class="w" data-i="&#x27;mæɡnɪts" data-p="" data-c="n. 磁铁；磁体( magnet的复数形式 )；有吸引力的人[物]；磁石">magnets</span> <span class="w" data-i="&#x27;intu:" data-p="" data-c="prep. 进入...之内；朝...；深入...之中；成为...状况">into</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="[计] 驱动程序">drivers</span>, <span class="w" data-i="æd" data-p="" data-c="vt. 增加；添加；附带说明；计算...总和 ｜ vi. 做加法；积累而成；增添 ｜ [计] 加法">add</span> <span class="w" data-i="&#x27;æktiv" data-p="" data-c="a. 活跃的；起作用的；积极的；有效的 ｜ n. 主动语态；积极分子">active</span> <span class="w" data-i="nɒiz" data-p="" data-c="n. 噪音；杂音；响声；喧闹 ｜ vt. 谣传 ｜ vi. 喧闹">noise</span> <span class="w" data-i="kænsә&#x27;leiʃәn" data-p="" data-c="n. 取消；作废；注销戳 ｜ [经] 注销；取消；保险单的注销">cancellation</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="di&#x27;tætʃәbl" data-p="" data-c="a. 可分离的">detachable</span> <span class="w" data-i="bu:m" data-p="" data-c="n. 繁荣；隆隆声 ｜ vi. 急速发展；发隆隆声 ｜ vt. 使兴旺；发隆隆声">boom</span> <span class="w" data-i="" data-p="" data-c="[计] 介质接口；连接器">mic</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="in&#x27;klu:d" data-p="" data-c="vt. 包括；把...算入；包住 ｜ [计] DOS内部命令:在CONFIG.SYS文件的一个配置块中包含另一配置块的内容">include</span> <span class="w" data-i="geim" data-p="" data-c="n. 比赛；玩耍；比分；得胜 ｜ vi. 赌博 ｜ a. 勇敢的；有胆量的；关于野味的；跛的">game</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="tʃæt" data-p="" data-c="n. 闲谈 ｜ vi. 闲谈；聊天">chat</span> <span class="w" data-i="kәn&#x27;trәul" data-p="" data-c="n. 控制；控制元件；控制装置（control的复数）">controls</span>. <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">It</span> <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="&#x27;kliәli" data-p="" data-c="adv. 清楚地">clearly</span> <span class="w" data-i="kɒst" data-p="" data-c="n. 代价；价值；费用 ｜ vi. 花费 ｜ vt. 使失去；值；使花费">cost</span> <span class="w" data-i="mɒ:" data-p="" data-c="n. 更多 ｜ a. 多的；程度较大的；更大的 ｜ adv. 多；更多；进一步">more</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-5.mp3"></audio>
-</div>
-<div class="trbox" hidden>拥有 PlayStation Portal 掌机的用户可以直接连接 Pulse，完全不需要适配器。Pulse 也不是索尼唯一的新型号。Pulse Edge 至今没有公布上市日期和价格，但它会把驱动单元里的磁体数量翻倍，加入主动降噪和可拆卸悬臂麦克风，并提供游戏与语音聊天音量控制。它显然会更贵。</div>
-<p><span class="w" data-i="dʒʌdʒd" data-p="" data-c="判断正确的">Judged</span> <span class="w" data-i="&#x27;pjuәli" data-p="" data-c="adv. 纯粹地；清白地；贞洁地">purely</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 容貌；产品特点；特征；嘴脸（feature的复数）">features</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> $99 <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="lait" data-p="" data-c="n. 光；光亮；灯；日光 ｜ a. 轻的；少量的；轻微的；轻快的 ｜ vt. 点燃；照亮">light</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 容貌；产品特点；特征；嘴脸（feature的复数）">features</span> <span class="w" data-i="kәm&#x27;pєә" data-p="" data-c="a. 比较的；对照的（compare的过去式和过去分词）">compared</span> <span class="w" data-i="wið" data-p="" data-c="prep. 和...在一起；以；由于">with</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="&#x27;raivəlz" data-p="" data-c="n. 竞争对手( rival的名词复数 )">rivals</span>. <span class="hard" data-cn="但索尼把预算花在音质和舒适度上的决定是合理的，因为这两点正是玩家每天都能感受到的东西。" data-an="主干是 the company&#x27;s decision makes sense。to spend the budget on ... 是不定式短语作 decision 的同位语（说明决定的内容）。because 引导原因状语从句，其中 players notice every single day 是省略关系词的定语从句修饰 the qualities。"><span class="w" data-i="jet" data-p="" data-c="adv. 还；尚；仍然；已经 ｜ conj. 然而">Yet</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;kʌmpәni" data-p="" data-c="n. 公司；友伴；交往；连队 ｜ vt. 陪伴 ｜ vi. 交往">company&#x27;s</span> <span class="w" data-i="di&#x27;siʒәn" data-p="" data-c="n. 决定；决心；决断 ｜ [计] 判定">decision</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="spend" data-p="" data-c="vt. 花费；浪费；度过；消耗 ｜ vi. 花费；用尽">spend</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;bʌdʒit" data-p="" data-c="n. 预算 ｜ vi. 编预算 ｜ vt. 编入预算；安排">budget</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span> <span class="w" data-i="&#x27;kwɒlәti" data-p="" data-c="n. 品质；特性；才能；质量 ｜ a. 优质的 ｜ [计] 品质">quality</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">comfort</span> <span class="w" data-i="meik" data-p="" data-c="v. 做；制作（make的第三人称单数）">makes</span> <span class="w" data-i="sens" data-p="" data-c="n. 感应；感觉；感官；意识 ｜ vt. 感觉；觉察；检测 ｜ [计] 阅读；检测">sense</span>, <span class="w" data-i="bi&#x27;kɒ:z" data-p="" data-c="conj. 因为">because</span> <span class="w" data-i="ðәuz" data-p="" data-c="pron. 那些">those</span> <span class="w" data-i="ɑ:" data-p="" data-c="be的现在时复数或第二人称单数">are</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈkwɔlitiz" data-p="" data-c="n. 质( quality的名词复数 )；特点；品质；优点">qualities</span> <span class="w" data-i="&#x27;pleiә" data-p="" data-c="n. 队员；参与者；迷你音碟机；雷射唱盘（player的复数形式）">players</span> <span class="w" data-i="&#x27;nәutis" data-p="" data-c="n. 注意；布告；通知；预告 ｜ vt. 注意；通知；评论；提及 ｜ vi. 注意">notice</span> <span class="w" data-i="&#x27;evri" data-p="" data-c="a. 每一；所有的">every</span> <span class="w" data-i="&#x27;siŋgl" data-p="" data-c="a. 单身的；单程的；单一的；个别的 ｜ n. 一个；单打；单程票 ｜ vt. 选出">single</span> <span class="w" data-i="dei" data-p="" data-c="n. 天；日子；白天；工作日 ｜ [医] 日(一昼夜)；昼；白天">day</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="fɒ:" data-p="" data-c="prep. 为；因为；至于 ｜ conj. 因为 ｜ [计] DOS批处理命令:对一组参数重复执行指定的命令">For</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5 <span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">owners</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="strikt" data-p="" data-c="a. 严厉的；绝对的；详尽的；严格的 ｜ [法] 严格的；精确的；绝对的">strict</span> <span class="w" data-i="&#x27;bʌdʒit" data-p="" data-c="n. 预算 ｜ vi. 编预算 ｜ vt. 编入预算；安排">budget</span>, <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="æn" data-p="" data-c="art. 一">an</span> <span class="w" data-i="&#x27;i:zi" data-p="" data-c="a. 容易的；缓缓的；舒适的；从容的 ｜ adv. 容易地；慢慢地">easy</span> <span class="w" data-i=".rekәmen&#x27;deiʃәn" data-p="" data-c="n. 推荐；介绍；推荐信；劝告 ｜ [经] 建议书">recommendation</span>.</p>
-<div class="para-tools">
-<button class="trbtn" type="button" aria-expanded="false">译文</button>
-<button class="spk" type="button">朗读</button>
-<audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-6.mp3"></audio>
-</div>
-<div class="trbox" hidden>如果只看功能清单，99 美元的 Pulse 相比同价位对手确实功能偏少。但索尼把预算花在音质和舒适度上的决定是合理的，因为这两点正是玩家每天都能感受到的东西。对于预算紧张的 PS5 用户来说，它是个很容易做出的推荐。</div>
-</div>
-</article>
-<footer class="story-foot"><span class="end-mark">— 本期完 —</span><a class="archive-link" href="./archive/">往期归档 <span aria-hidden="true">→</span></a></footer>
-</div>
-<aside class="rail-right" aria-label="语言笔记">
-<section class="panel notes"><h2 class="panel-title">Language notes</h2><h3>地道表达</h3><ol class="colloc"><li><span class="en">do everything at once</span><span class="cn">同时包办一切</span></li><li><span class="en">light on features</span><span class="cn">功能偏少</span></li><li><span class="en">spend the budget on</span><span class="cn">把预算花在……上</span></li><li><span class="en">in this price bracket</span><span class="cn">在这个价位区间</span></li></ol><details class="gloss"><summary>生词速查 <span>7</span></summary><dl><div><dt>boom mic</dt><dd>悬臂麦克风（可伸到嘴边的麦克风）</dd></div><div><dt>dongle</dt><dd>无线适配器（插在设备上的小接收器）</dd></div><div><dt>equalizer</dt><dd>均衡器（调节各频段音量的设置）</dd></div><div><dt>give</dt><dd>弹性；回弹余地（此处为名词）</dd></div><div><dt>lossless</dt><dd>无损的（压缩后不损失音质）</dd></div><div><dt>planar magnetic drivers</dt><dd>平面磁驱动单元（高端耳机常用的一种发声单元）</dd></div><div><dt>shrill</dt><dd>尖厉刺耳的</dd></div></dl></details></section>
-<section class="panel review"><h2 class="panel-title">昨日复习</h2><ol class="review-list">
-<li><span class="idx">01</span><b>consecutive</b><span class="meaning">连续的（接连发生的）</span></li>
-<li><span class="idx">02</span><b>projection</b><span class="meaning">预测；预计数字</span></li>
-<li><span class="idx">03</span><b>unanimous</b><span class="meaning">一致同意的</span></li>
-<li><span class="idx">04</span><b>speculative</b><span class="meaning">推测性的；投机性的</span></li>
-<li><span class="idx">05</span><b>imprint</b><span class="meaning">印记；出版社品牌</span></li>
-</ol></section>
-<p class="rail-end">每天一篇，读完为止。</p>
-</aside>
+
+<main class="console">
+  <div class="transcript">
+    <div class="spectrum" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="transcript-head"><span>Transcript</span><span>6 segments</span><span>EN-GB</span></div>
+    <section class="segment lead" id="s1" data-seg="1"><header class="seg-head"><span class="seg-time">00:00</span><h2 class="seg-title"><b>01</b>The pitch</h2><button class="spk seg-play" type="button" aria-label="播放第 1 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-1.mp3"></audio></header><div class="seg-body"><p><span class="w" data-i="&#x27;geimiŋ" data-p="" data-c="n. 赌博；赌胜负 ｜ [法] 赌博；赌赛">Gaming</span> <span class="w" data-i="ˈhedsets" data-p="" data-c="n. 戴在头上的耳机或听筒( headset的复数形式 )">headsets</span> <span class="w" data-i="&#x27;ɒ:fn" data-p="" data-c="adv. 时常；常常">often</span> <span class="w" data-i="&#x27;prɒmis" data-p="" data-c="n. 诺言；约定的事情；有指望 ｜ vt. 允诺；约定；预示 ｜ vi. 允诺；有前途；有指望">promise</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="du:" data-p="" data-c="v. 做；进行；完成">do</span> <span class="w" data-i="&#x27;evriθiŋ" data-p="" data-c="pron. 每件事物；所有事物">everything</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="wʌns" data-p="" data-c="adv. 一次；曾经；一旦 ｜ conj. 一旦；一经 ｜ n. 一次">once</span>: <span class="w" data-i="nɒiz" data-p="" data-c="n. 噪音；杂音；响声；喧闹 ｜ vt. 谣传 ｜ vi. 喧闹">noise</span> <span class="w" data-i="kænsә&#x27;leiʃәn" data-p="" data-c="n. 取消；作废；注销戳 ｜ [经] 注销；取消；保险单的注销">cancellation</span>, <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">studio-quality</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span>, <span class="w" data-i="" data-p="" data-c="[计] 可交换的">swappable</span> <span class="w" data-i="&#x27;bætә" data-p="" data-c="n. 电池（battery的复数形式）">batteries</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="kә&#x27;nekʃәn" data-p="" data-c="n. 连接；关系（connection的复数形式）；关系学">connections</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="&#x27;evri" data-p="" data-c="a. 每一；所有的">every</span> <span class="w" data-i="kәn&#x27;sәul" data-p="" data-c="vt. 安慰；藉慰 ｜ n. 控制台 ｜ [计] 控制台">console</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="әun" data-p="" data-c="n. 自己的 ｜ a. 自己的；嫡亲的；同胞的 ｜ vt. 拥有；支配；自认；承认">own</span>. <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="nju:" data-p="" data-c="a. 新的；陌生的；最近的；不熟悉的 ｜ [法] 新发现的；新的；重新开始的">new</span> <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="teik" data-p="" data-c="vt. 取走；预备动作（take第三人称单数）">takes</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;nærәu" data-p="" data-c="a. 比较狭窄的（narrow的比较级）">narrower</span> <span class="w" data-i="ә&#x27;prәutʃ" data-p="" data-c="n. 接近；入门 ｜ vt. 接近；近似；找...商量 ｜ vi. 靠近">approach</span>. <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">At</span> $99.99, <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="&#x27;ɒfә" data-p="" data-c="n. 提议；出价；求婚；试图（offer的复数）">offers</span> <span class="w" data-i="tu:" data-p="" data-c="num. 二；二个">two</span> <span class="w" data-i="θiŋ" data-p="" data-c="n. 所有物；财产；用具；用品 ｜ [法] 物">things</span> <span class="w" data-i="dʌn" data-p="" data-c="a. 完成了的；好了的 ｜ do的过去分词">done</span> <span class="w" data-i="wel" data-p="" data-c="n. 井；泉水；源泉；好 ｜ v. 涌出 ｜ a. 健康的；良好的；适宜的；恰当的">well</span>, <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">comfort</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;veri" data-p="" data-c="a. 真正的；恰好的；十足的；特有的 ｜ adv. 非常；完全">very</span> <span class="w" data-i="&#x27;litl" data-p="" data-c="n. 一点点；少许；一会儿；短时间 ｜ a. 小的；很少的；幼小的；琐碎的 ｜ adv. 很少；稍微；完全不">little</span> <span class="w" data-i="els" data-p="" data-c="a. 别的；其他的 ｜ adv. 另外；否则；不然">else</span>. <span class="w" data-i="ðæt" data-p="" data-c="a. 那；那个 ｜ conj. 以致；因为 ｜ pron. 那">That</span> <span class="w" data-i="ri&#x27;streint" data-p="" data-c="n. 抑制；克制；束缚 ｜ [医] 约束；拘束">restraint</span> <span class="w" data-i="mei" data-p="" data-c="n. 五月 ｜ aux. 愿能；可以；愿意">may</span> <span class="w" data-i="bi:" data-p="" data-c="v. 是；表示；在 ｜ [计] 后端；总线允许">be</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="strɒŋ" data-p="" data-c="a. 最强壮的（为strong的最高级）">strongest</span> <span class="w" data-i="&#x27;seliŋ" data-p="" data-c="a. 卖的；销路好的；出售的 ｜ [经] 卖盘；出售；销路好">selling</span> <span class="w" data-i="pɒint" data-p="" data-c="n. 点；小数点；标点；地点 ｜ vt. 弄尖；强调；指出；加标点于 ｜ vi. 指；指向；表明">point</span>, <span class="w" data-i="i&#x27;speʃәli" data-p="" data-c="adv. 尤其；特别；格外">especially</span> <span class="w" data-i="fɒ:" data-p="" data-c="prep. 为；因为；至于 ｜ conj. 因为 ｜ [计] DOS批处理命令:对一组参数重复执行指定的命令">for</span> <span class="w" data-i="&#x27;pleiә" data-p="" data-c="n. 队员；参与者；迷你音碟机；雷射唱盘（player的复数形式）">players</span> <span class="w" data-i="hu:" data-p="" data-c="pron. 谁">who</span> <span class="w" data-i="wɒnt" data-p="" data-c="n. 需要的东西；缺乏；贫困；需要 ｜ vt. 要；希望；应该；缺少 ｜ vi. 生活困苦；需要；缺少">want</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;sɒlid" data-p="" data-c="n. 固体 ｜ a. 坚硬的；稳固的；固体的；实心的 ｜ [计] 原色">solid</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="wi&#x27;ðaut" data-p="" data-c="prep. 没有；不；在...之外 ｜ adv. 在外面；户外 ｜ n. 外面；外部">without</span> <span class="w" data-i="&#x27;peiiŋ" data-p="" data-c="a. 支付的；付款的；有利的；赢利的 ｜ [经] 支付">paying</span> <span class="w" data-i="&#x27;flægʃip" data-p="" data-c="n. 旗舰">flagship</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格（price的复数）">prices</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>游戏耳机常常承诺样样全能：主动降噪、录音室级音质、可更换电池，还能连上你拥有的每一台游戏机。索尼新推出的 PlayStation Pulse 走的是更窄的路线：99.99 美元的价格，只把音质和佩戴舒适这两件事做好，其他几乎一概不加。这种克制或许正是它最大的卖点，尤其对那些想要一副靠谱耳机、又不想付旗舰价钱的玩家来说。</div></div></section><section class="segment" id="s2" data-seg="2"><header class="seg-head"><span class="seg-time">00:30</span><h2 class="seg-title"><b>02</b>The sound</h2><button class="spk seg-play" type="button" aria-label="播放第 2 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-2.mp3"></audio></header><div class="seg-body"><p><span class="hard" data-cn="在它毫不起眼的耳罩里，装着定制的平面磁驱动单元，无论你是在打游戏还是听音乐，都能提供干净、细腻的声音。" data-an="全句为完全倒装：地点状语 Inside its plain ear cups 前置，谓语 sit 提到主语 custom planar magnetic drivers 之前。which 引导非限制性定语从句修饰 drivers；whether ... or ... 引导让步/选择状语从句，说明两种情况都成立。关键词搭配 produce clean, detailed sound。"><span class="w" data-i="&#x27;in&#x27;said" data-p="" data-c="n. 内部；内脏；内幕 ｜ a. 内部的；秘密的；户内的 ｜ adv. 在里面">Inside</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="plein" data-p="" data-c="n. 平原；草原；朴实无华的东西；无格式 ｜ a. 简单的；明白的；平常的；不好看的 ｜ adv. 清楚地；显然地">plain</span> <span class="w" data-i="iә" data-p="" data-c="n. 耳朵；倾听；听觉；穗 ｜ vi. 抽穗">ear</span> <span class="w" data-i="kʌp" data-p="" data-c="n. 拨火罐（器具）；杯子（cup的复数形式）">cups</span> <span class="w" data-i="sit" data-p="" data-c="vi. 坐；就座；坐落 ｜ vt. 使就座；骑 ｜ n. 坐；衣服合身">sit</span> <span class="w" data-i="&#x27;kʌstәm" data-p="" data-c="n. 习惯；风俗；海关；自定义 ｜ a. 定制的 ｜ [计] 定制；自定义">custom</span> <span class="w" data-i="&#x27;pleinә" data-p="" data-c="a. 平面的；在同一平面上的；二维的 ｜ [电] 平面">planar</span> <span class="w" data-i="mæg&#x27;netik" data-p="" data-c="a. 有磁性的；有吸引力的；催眠术的 ｜ [医] 磁[性]的">magnetic</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="[计] 驱动程序">drivers</span>, <span class="w" data-i="hwitʃ" data-p="" data-c="pron. 哪一个；那一个">which</span> <span class="w" data-i="prә&#x27;dju:s" data-p="" data-c="n. 生产品；物产；后代 ｜ vt. 产生；生产；提出；出示 ｜ vi. 生产；制造">produce</span> <span class="w" data-i="kli:n" data-p="" data-c="a. 干净的；清白的；简洁的 ｜ adv. 清洁地；完全地 ｜ vt. 清理；使干净；出空">clean</span>, <span class="w" data-i="&#x27;di:teild" data-p="" data-c="a. 详细的；复杂的 ｜ [法] 详细的；详尽的">detailed</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span> <span class="w" data-i="&#x27;hweðә" data-p="" data-c="conj. 是否；不论 ｜ pron. 两个中的哪一个">whether</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="ɑ:" data-p="" data-c="be的现在时复数或第二人称单数">are</span> <span class="w" data-i="p&#x27;leɪ" data-p="" data-c="n. 游戏；玩耍；竞技；比赛">playing</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="geim" data-p="" data-c="n. 比赛；玩耍；比分；得胜 ｜ vi. 赌博 ｜ a. 勇敢的；有胆量的；关于野味的；跛的">game</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="&#x27;lisniŋ" data-p="" data-c="n. 听；监听 ｜ a. 助听用的">listening</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="&#x27;mju:zik" data-p="" data-c="n. 音乐；乐曲">music</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;tju:niŋ" data-p="" data-c="n. 调音；调谐；协调 ｜ [计] 调整">tuning</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="&#x27;naiðә" data-p="" data-c="adv. 皆不；两个都不 ｜ a. (两者)都不的 ｜ pron. 两者都不">neither</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">bass-heavy</span> <span class="w" data-i="nɒ:" data-p="" data-c="conj. 也不；也没有 ｜ [计] 或非">nor</span> <span class="w" data-i="ʃril" data-p="" data-c="n. 尖声 ｜ a. 尖锐的；刺耳的 ｜ vt. 尖声说出">shrill</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="di&#x27;fɒ:lt" data-p="" data-c="n. 违约；不履行责任；缺席；默认值 ｜ v. 疏怠职责；缺席；拖欠；默认 ｜ [计] 默认；默认值；缺省值">default</span> <span class="w" data-i="&#x27;i:kwәlaizә" data-p="" data-c="n. 使相等的东西；平衡装置；均压器 ｜ [化] 平衡器；均衡器；均压管；均压平衡管">equalizer</span> <span class="w" data-i="saund" data-p="" data-c="n. 音效；声音（sound的复数）">sounds</span> <span class="w" data-i="" data-p="" data-c="a. 有力的；生气勃勃的">punchy</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;pleznt" data-p="" data-c="a. 愉快的；可爱的；活泼的；亲切的">pleasant</span>; <span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">owners</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="stil" data-p="" data-c="n. 蒸馏室；寂静；剧照 ｜ v. 蒸馏；(使)平静；(使)静止 ｜ a. 静止的；不动的；静寂的；不起泡的">still</span> <span class="w" data-i="ә&#x27;dʒʌst" data-p="" data-c="vt. 调整；使适应于；校准 ｜ vi. 适应于；被调节；相互熟悉而适应">adjust</span> <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="θru:" data-p="" data-c="adv. 穿越；从头至尾；到底；因为 ｜ prep. 经过；穿过 ｜ a. 对穿的；直达的；完结的">through</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5 <span class="w" data-i="&#x27;intәfeis" data-p="" data-c="n. 分界面；接触面；界面 ｜ [计] 接口；界面">interface</span>. <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony</span> <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="&#x27;ju:st" data-p="" data-c="a. 使用过的；二手的；习惯的">used</span> <span class="w" data-i="θis" data-p="" data-c="pron. 这；本 ｜ a. 这；本 ｜ adv. 这么">this</span> <span class="w" data-i="" data-p="" data-c="[计] 高端">high-end</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="n. 驾驶员；驱动器；驱动程序 ｜ [化] 驱动器">driver</span> <span class="w" data-i="di&#x27;zain" data-p="" data-c="n. 设计；图样；方案；企图 ｜ v. 设计；计划">design</span> <span class="w" data-i="bi&#x27;fɒ:" data-p="" data-c="prep. 在...之前 ｜ conj. 在...之前 ｜ adv. 在前">before</span>, <span class="w" data-i="&#x27;stɑ:tiŋ" data-p="" data-c="n. 开端；开始；出发；起动 ｜ [机] 开动；起动">starting</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> 2023, <span class="w" data-i="bʌt" data-p="" data-c="prep. 除了 ｜ conj. 但是 ｜ adv. 仅仅">but</span> <span class="w" data-i="&#x27;nevә" data-p="" data-c="adv. 从不；决不；不曾 ｜ [法] 永不；决不；从来没有">never</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="sʌtʃ" data-p="" data-c="a. 如此的；这样的">such</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="lәu" data-p="" data-c="n. 低点；低价；低；牛叫声 ｜ a. 低的；消沉的；低等的；浅的 ｜ adv. 低下地；谦卑地；低">low</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>在它毫不起眼的耳罩里，装着定制的平面磁驱动单元，无论你是在打游戏还是听音乐，都能提供干净、细腻的声音。它的调音既不过分强调低频，也不尖利刺耳，默认的均衡器听起来饱满悦耳；用户仍可在 PS5 界面里自行调整。索尼早在 2023 年就用过这种高端驱动设计，但从没有做到这么低的价位。</div></div></section><section class="segment" id="s3" data-seg="3"><header class="seg-head"><span class="seg-time">01:02</span><h2 class="seg-title"><b>03</b>The fit</h2><button class="spk seg-play" type="button" aria-label="播放第 3 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-3.mp3"></audio></header><div class="seg-body"><p><span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">Comfort</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;sekәnd" data-p="" data-c="n. 秒；瞬间；第二名；支持者 ｜ a. 第二的；其次的；次要的；附加的 ｜ num. 第二">second</span> <span class="w" data-i="streŋθ" data-p="" data-c="n. 力量；实力；强度；浓度 ｜ [化] 强度">strength</span>. <span class="hard" data-cn="头梁有白色和黑色两种，内侧为柔软的触感材质，头顶承重处留有足够弹性，能把重量分散开。" data-an="主干为 The headband has a soft-touch underside and enough give。available in white or black 是形容词短语作插入语，补充说明头梁的颜色选项。enough give to spread ... 为 enough + 名词 + 不定式结构，give 在这里是名词，意为「弹性」。"><span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;hedbænd" data-p="" data-c="n. 头巾；头饰带 ｜ [医] 额镜带">headband</span>, <span class="w" data-i="ә&#x27;veilәbl" data-p="" data-c="a. 可利用的；可获得的；有效的 ｜ [医] 有效的；可得的">available</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="hwait" data-p="" data-c="n. 白色；洁白；眼白；白种人 ｜ a. 白色的；纯洁的；白种的；苍白的">white</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="blæk" data-p="" data-c="n. 黑色；黑颜料 ｜ a. 黑色的">black</span>, <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">soft-touch</span> <span class="w" data-i="&#x27;ʌndәsaid" data-p="" data-c="n. 下面；下侧；底面">underside</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="i&#x27;nʌf" data-p="" data-c="n. 充足；够；很多 ｜ a. 充足的；足够 ｜ adv. 足够">enough</span> <span class="w" data-i="giv" data-p="" data-c="n. 弹性；适应性 ｜ vt. 给；授予；供给；产生 ｜ vi. 捐赠；支持不住；让步">give</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="spred" data-p="" data-c="n. 传播；散布；伸展 ｜ a. 双唇展开的；伸展的 ｜ vt. 展开；铺开；传播；推广">spread</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="weit" data-p="" data-c="n. 重；重量；体重；砝码 ｜ vt. 加重量于；压迫；使加权；称重量 ｜ [计] 粗细">weight</span> <span class="w" data-i="ә&#x27;krɒs" data-p="" data-c="prep. 越过；穿过；与...相交叉；在...的对面 ｜ adv. 交叉；到另一边；在对面；成十字">across</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="tɒp" data-p="" data-c="n. 顶部；顶端；极点；上面 ｜ a. 最高的；顶上的；头等的 ｜ vt. 盖；加以顶；高达；超越">top</span> <span class="w" data-i="ɒv" data-p="" data-c="prep. 的；属于">of</span> <span class="w" data-i="juә" data-p="" data-c="pron. 你的；你们的">your</span> <span class="w" data-i="hed" data-p="" data-c="n. 头；头脑；领袖；脑袋 ｜ vt. 为首；朝向；前进；用头顶 ｜ vi. 朝特定方向行进；(作物)结穗">head</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="it&#x27;self" data-p="" data-c="pron. 它本身；它自己">itself</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="lait" data-p="" data-c="n. 光；光亮；灯；日光 ｜ a. 轻的；少量的；轻微的；轻快的 ｜ vt. 点燃；照亮">light</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="saiz" data-p="" data-c="n. 大小；尺寸；规模；尺码 ｜ vt. 上浆；依大小排列 ｜ vi. 可比拟">size</span> <span class="w" data-i="əˈdʒʌstmənts" data-p="" data-c="n. 调解( adjustment的复数形式 )；&lt;心&gt;调节；调整；调节器">adjustments</span> <span class="w" data-i="ik&#x27;stend" data-p="" data-c="v. 扩充；延伸；伸展；扩大 ｜ [计] 扩展">extend</span> <span class="w" data-i="fɑ:" data-p="" data-c="a. 远的；久远的；遥远的 ｜ adv. 甚远地；很；到很深的程度；到很远的距离">far</span> <span class="w" data-i="bi&#x27;jɒnd" data-p="" data-c="prep. 超过；在那一边；迟于 ｜ adv. 在远处 ｜ n. 更远处">beyond</span> <span class="w" data-i="hwɒt" data-p="" data-c="pron. 什么 ｜ interj. 怎么；多么 ｜ a. 什么的">what</span> <span class="w" data-i="mәust" data-p="" data-c="n. 最多；最大 ｜ a. 大多数的；几乎全部的；最多的 ｜ adv. 最；最多；极其">most</span> <span class="w" data-i="&#x27;pi:pl" data-p="" data-c="n. 人；人民；民族；平民 ｜ vt. 使住满人；居住于">people</span> <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="&#x27;evә" data-p="" data-c="adv. 曾经；究竟；永远">ever</span> <span class="w" data-i="ni:d" data-p="" data-c="n. 需要；必须；缺乏 ｜ vt. 需要；必需 ｜ vi. 贫困；有必要">need</span>. <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="iә" data-p="" data-c="n. 耳朵；倾听；听觉；穗 ｜ vi. 抽穗">ear</span> <span class="w" data-i="kʌp" data-p="" data-c="n. 拨火罐（器具）；杯子（cup的复数形式）">cups</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="&#x27;i:vәn" data-p="" data-c="a. 平坦的；相等的；连贯的；均等的 ｜ vt. 使平坦；使相等 ｜ vi. 变平；成为相等">even</span> <span class="w" data-i="&#x27;rәuteit" data-p="" data-c="a. 辐状的 ｜ vt. 使旋转；使转动；使轮流 ｜ vi. 旋转；循环">rotate</span> 180 <span class="w" data-i="di&#x27;gri:" data-p="" data-c="n. 角度；学历；度数（degree的复数）">degrees</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="&#x27;i:ðә" data-p="" data-c="a. (两者之中)任一的；(两者之中)各一的 ｜ pron. (两者之中)任一 ｜ conj. 或；要么">either</span> <span class="w" data-i="di&#x27;rekʃәn" data-p="" data-c="n. 方向；指导；趋势 ｜ [计] 方向；流向">direction</span>, <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 面孔的一部分(如眼、口等)；特征；容貌；特色 ｜ vt. 是...的特色；特写；放映 ｜ vi. 起重要作用">feature</span> <span class="w" data-i="ðæt" data-p="" data-c="a. 那；那个 ｜ conj. 以致；因为 ｜ pron. 那">that</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i=".ʌn&#x27;ju:ʒu:l" data-p="" data-c="a. 不寻常的；罕见的；与众不同的">unusual</span> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">in</span> <span class="w" data-i="θis" data-p="" data-c="pron. 这；本 ｜ a. 这；本 ｜ adv. 这么">this</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span> <span class="w" data-i="&#x27;brækit" data-p="" data-c="n. 支架；括弧；托架 ｜ vt. 装托架；括入括弧 ｜ [计] 方括号；括号">bracket</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;dʒenjuin" data-p="" data-c="adv. 真诚地；诚实地">genuinely</span> <span class="w" data-i="&#x27;ju:sful" data-p="" data-c="a. 有用的；有益的 ｜ [机] 有用的；有效的">useful</span> <span class="w" data-i="hwen" data-p="" data-c="conj. 当...的时候 ｜ adv. 何时；什么时候 ｜ pron. 什么时侯">when</span> <span class="w" data-i="ju:" data-p="" data-c="pron. 你；你们">you</span> <span class="w" data-i="rest" data-p="" data-c="n. 休息；睡眠；安息；稍息 ｜ vi. 休息；睡；长眠；安心 ｜ vt. 使休息；使支撑；把...寄托于">rest</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;hedset" data-p="" data-c="n. (一副)耳机 ｜ [电] 头载机组">headset</span> <span class="w" data-i="ә&#x27;raund" data-p="" data-c="prep. 包围；在...周围；四处 ｜ adv. 兜着圈子；在附近；到处">around</span> <span class="w" data-i="juә" data-p="" data-c="pron. 你的；你们的">your</span> <span class="w" data-i="nek" data-p="" data-c="n. 脖子；衣领；颈 ｜ vi. 拥抱；拥吻；收缩 ｜ vt. 割颈">neck</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>舒适是它的第二个强项。头梁有白色和黑色两种，内侧为柔软的触感材质，头顶承重处留有足够弹性，能把重量分散开。耳机本身很轻，尺寸调节范围也远超大多数人的需要。耳罩甚至可以向任意方向旋转 180 度——在这个价位区间并不常见，而当你把耳机挂在脖子上时，这个设计确实好用。</div></div></section><section class="segment" id="s4" data-seg="4"><header class="seg-head"><span class="seg-time">01:38</span><h2 class="seg-title"><b>04</b>The connections</h2><button class="spk seg-play" type="button" aria-label="播放第 4 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-4.mp3"></audio></header><div class="seg-body"><p><span class="hard" data-cn="在功能上，Pulse 可以同时通过两条连接串流音频：一条是 PlayStation Link（索尼的低延迟无损无线标准），另一条是普通蓝牙。" data-an="主干是 the Pulse streams audio over two connections。冒号后并列两个名词短语作解释：PlayStation Link 与 ordinary Bluetooth，中间夹着同位语 Sony&#x27;s low-latency, lossless wireless standard 说明前者的性质。at once 意为「同时」。"><span class="w" data-i="&#x27;fʌŋkʃәnәl" data-p="" data-c="adv. 官能；有功能；职务；机能 ｜ [计] 功能地">Functionally</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="stri:m" data-p="" data-c="n. 数据流；流控制（stream复数形式）">streams</span> <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="&#x27;әuvә" data-p="" data-c="adv. 结束；越过；从头到尾 ｜ prep. 在...之上；遍于...之上；越过 ｜ a. 上面的">over</span> <span class="w" data-i="tu:" data-p="" data-c="num. 二；二个">two</span> <span class="w" data-i="kә&#x27;nekʃәn" data-p="" data-c="n. 连接；关系（connection的复数形式）；关系学">connections</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="wʌns" data-p="" data-c="adv. 一次；曾经；一旦 ｜ conj. 一旦；一经 ｜ n. 一次">once</span>: <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="liŋk" data-p="" data-c="n. 环；连结物；链接；火把 ｜ vt. 连结；联合；挽住 ｜ vi. 连接起来">Link</span>, <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">low-latency</span>, <span class="w" data-i="ˈlɒsləs" data-p="" data-c="a. 无损的；无损耗；无耗">lossless</span> <span class="w" data-i="&#x27;waiәlis" data-p="" data-c="n. 无线电 ｜ a. 无线的；无线电的">wireless</span> <span class="w" data-i="&#x27;stændәd" data-p="" data-c="n. 标准；规格；旗；军旗 ｜ a. 标准的；合规格的 ｜ [计] 标准">standard</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;ɒ:dinәri" data-p="" data-c="a. 平常的；普通的；平凡的 ｜ n. 平常的人(或事)">ordinary</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">A</span> <span class="w" data-i="smɒ:l" data-p="" data-c="a. 小的；少的；小型的；低微的 ｜ adv. 些微地 ｜ n. 狭小部分">small</span> <span class="w" data-i="" data-p="" data-c="暂无词典释义（可能是专有名词）">USB-C</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span> <span class="w" data-i="pεәz" data-p="" data-c="n. 夫妇；一副（pair的复数）">pairs</span> <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="&#x27;kwikli" data-p="" data-c="adv. 很快地">quickly</span> <span class="w" data-i="wið" data-p="" data-c="prep. 和...在一起；以；由于">with</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5, <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="" data-p="" data-c="个人计算机 ｜ [计] 外部控制；个人计算机；光电导体；伪码">PC</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="nin&#x27;tendәj" data-p="" data-c="任天堂">Nintendo</span> <span class="w" data-i="switʃ" data-p="" data-c="n. 开关；电闸；转换；软枝 ｜ vt. 转变；切换；摆动；转换 ｜ vi. 转换；变换；摆动">Switch</span> 2. <span class="hard" data-cn="专用蓝牙按键除了配对，还能暂停或继续蓝牙音源（也可以接听、挂断电话）；而音量拨轮只在没有 Link 设备连接时才控制蓝牙音量。" data-an="两个并列分句由 while 连接，表示对比：前一分句主语 A dedicated Bluetooth button 带两个谓语（pauses or resumes ... and can also answer）。whenever no Link device is connected 是时间状语从句。注意 while 在此不是「当……时」，而是对比连词。"><span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">A</span> <span class="w" data-i="&#x27;dedikeitid" data-p="" data-c="a. 专注的；献身的">dedicated</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="&#x27;bʌtәn" data-p="" data-c="n. 钮扣；按钮 ｜ vi. 扣住 ｜ vt. 钉钮扣于；扣紧">button</span> <span class="w" data-i="pɔ:ziz" data-p="" data-c="n. 停顿( pause的名词复数 )；暂停；延长记号；暂停键 ｜ v. 停顿( pause的第三人称单数 )；暂停；（按暂停键）暂停放音；暂停放像">pauses</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="ri&#x27;zju:m" data-p="" data-c="n. 简历；个人履历（resume的复数）">resumes</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="kәn&#x27;tent" data-p="" data-c="n. 内容；满足；意义；要旨 ｜ a. 满足的；满意的 ｜ vt. 使...满足；使...安心">content</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="&#x27;ɒ:lsәu" data-p="" data-c="adv. 也；并且；同样地">also</span> <span class="w" data-i="&#x27;ɑ:nsә" data-p="" data-c="n. 答案；回答；回报；答辩 ｜ vt. 回答；反驳；适应；响应 ｜ vi. 回答；答应；负责；符合">answer</span> <span class="w" data-i="kɒ:l" data-p="" data-c="n. 调用；呼吁；电话（call的复数）">calls</span>, <span class="w" data-i="hwail" data-p="" data-c="n. 一会儿；(一段)时间 ｜ conj. 当...的时候；虽然 ｜ vt. 消磨">while</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="&#x27;vɒljum" data-p="" data-c="n. 册；卷；体积；容量 ｜ vi. 成团卷起 ｜ vt. 把...收集成卷">volume</span> <span class="w" data-i="&#x27;rɒkә" data-p="" data-c="n. 摇的人；摇杆 ｜ [电] 摇杆">rocker</span> <span class="w" data-i="kәn&#x27;trәul" data-p="" data-c="n. 控制；控制元件；控制装置（control的复数）">controls</span> <span class="w" data-i="" data-p="" data-c="n. 蓝牙技术（一种无线通信的标准）">Bluetooth</span> <span class="w" data-i="&#x27;ɒ:diou" data-p="" data-c="a. 音频的；声音的 ｜ [电] 声频">audio</span> <span class="w" data-i="hwen&#x27;evә" data-p="" data-c="conj. 每当 ｜ adv. 不论何时；每逢">whenever</span> <span class="w" data-i="nәu" data-p="" data-c="n. 不；拒绝；否决票 ｜ a. 没有；不是；绝非 ｜ adv. 不">no</span> <span class="w" data-i="liŋk" data-p="" data-c="n. 环；连结物；链接；火把 ｜ vt. 连结；联合；挽住 ｜ vi. 连接起来">Link</span> <span class="w" data-i="di&#x27;vais" data-p="" data-c="n. 装置；设计；策略；发明物 ｜ [计] 设备；DOS内部命令:该命令要求DOS安装一个设备驱动程序">device</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="kә&#x27;nektid" data-p="" data-c="a. 连接的；连贯的；有联系的；关联的 ｜ [计] 连接的">connected</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="in" data-p="" data-c="prep. 在...期间；在...之内；处于...之中；从事于 ｜ adv. 进入；朝里；在里面；在屋里 ｜ a. 在里面的；在朝的">In</span> <span class="w" data-i=".simәl&#x27;teinjәs" data-p="" data-c="a. 同时的；同时发生的 ｜ [计] 同时的">simultaneous</span> <span class="w" data-i="mәud" data-p="" data-c="n. 模态；调式；样式；文体 ｜ [计] 方式；DOS外部命令:设定各种设备命令">mode</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="seim" data-p="" data-c="a. 相同的；同样的 ｜ pron. 相同的人(或事物) ｜ adv. 同样地">same</span> <span class="w" data-i="&#x27;rɒkә" data-p="" data-c="n. 摇的人；摇杆 ｜ [电] 摇杆">rocker</span> <span class="w" data-i="əˈdʒʌsts" data-p="" data-c="v. （改变…以）适应；调整；校正( adjust的第三人称单数 )">adjusts</span> <span class="w" data-i="&#x27;әunli" data-p="" data-c="a. 唯一的；仅有的；最佳的 ｜ adv. 只有；仅仅；只能 ｜ conj. 但是；不过">only</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="di&#x27;vais" data-p="" data-c="n. 装置；设计；策略；发明物 ｜ [计] 设备；DOS内部命令:该命令要求DOS安装一个设备驱动程序">device</span> <span class="w" data-i="ә&#x27;tætʃt" data-p="" data-c="a. 附加的；依恋的；充满爱心的">attached</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>在功能上，Pulse 可以同时通过两条连接串流音频：一条是 PlayStation Link（索尼的低延迟无损无线标准），另一条是普通蓝牙。它附带一个小巧的 USB-C 适配器，插上 PS5、个人电脑或任天堂 Switch 2 就能快速配对。专用蓝牙按键除了配对，还能暂停或继续蓝牙音源（也可以接听、挂断电话）；而音量拨轮只在没有 Link 设备连接时才控制蓝牙音量。在同时播放模式下，同一拨轮只调节接在适配器上的设备。</div></div></section><section class="segment" id="s5" data-seg="5"><header class="seg-head"><span class="seg-time">02:15</span><h2 class="seg-title"><b>05</b>The lineup</h2><button class="spk seg-play" type="button" aria-label="播放第 5 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-5.mp3"></audio></header><div class="seg-body"><p><span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">Owners</span> <span class="w" data-i="ɒv" data-p="" data-c="prep. 的；属于">of</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="" data-p="" data-c="n. 游戏机">PlayStation</span> <span class="w" data-i="&#x27;pɒ:tl" data-p="" data-c="n. 入口；大门 ｜ a. 肝门的">Portal</span> <span class="w" data-i="hændheld" data-p="" data-c="a. 掌上型；手持型">handheld</span> <span class="w" data-i="kæn" data-p="" data-c="vt. 装罐 ｜ n. 罐头；容器 ｜ aux. 能；可以">can</span> <span class="w" data-i="kә&#x27;nekt" data-p="" data-c="v. 连接；联合；联系">connect</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="di&#x27;rektli, dai&#x27;rektli" data-p="" data-c="adv. 径直地；直接地；直率地；正好地 ｜ conj. 一...(就...)；一当...就... ｜ [计] 直接的">directly</span>, <span class="w" data-i="wi&#x27;ðaut" data-p="" data-c="prep. 没有；不；在...之外 ｜ adv. 在外面；户外 ｜ n. 外面；外部">without</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈdɒŋgl" data-p="" data-c="n. 电子狗；软件狗">dongle</span> <span class="w" data-i="æt" data-p="" data-c="prep. 在；向；对 ｜ [计] 地址转换器；异常传输；自动订票">at</span> <span class="w" data-i="ɒ:l" data-p="" data-c="a. 所有的；全部的；一切的 ｜ adv. 全部；全然 ｜ pron. 全部">all</span>. <span class="w" data-i="nɒ:" data-p="" data-c="conj. 也不；也没有 ｜ [计] 或非">Nor</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="" data-p="" data-c="n. 索尼（日本电子娱乐公司）">Sony&#x27;s</span> <span class="w" data-i="&#x27;әunli" data-p="" data-c="a. 唯一的；仅有的；最佳的 ｜ adv. 只有；仅仅；只能 ｜ conj. 但是；不过">only</span> <span class="w" data-i="nju:" data-p="" data-c="a. 新的；陌生的；最近的；不熟悉的 ｜ [法] 新发现的；新的；重新开始的">new</span> <span class="w" data-i="&#x27;mɒdәl" data-p="" data-c="n. 模型；模范；模特儿 ｜ a. 模范的；作模型用的 ｜ vi. 做模型；做模特儿">model</span>. <span class="w" data-i="ðә" data-p="" data-c="art. 那">The</span> <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="edʒ" data-p="" data-c="n. 边缘；尖锐；刀刃；优势 ｜ vt. 使锐利；挤进；镶边 ｜ vi. 缓缓移动">Edge</span>, <span class="w" data-i="hwitʃ" data-p="" data-c="pron. 哪一个；那一个">which</span> <span class="w" data-i="stil" data-p="" data-c="n. 蒸馏室；寂静；剧照 ｜ v. 蒸馏；(使)平静；(使)静止 ｜ a. 静止的；不动的；静寂的；不起泡的">still</span> <span class="w" data-i="hæz" data-p="" data-c="have的第三人称单数现在式">has</span> <span class="w" data-i="nәu" data-p="" data-c="n. 不；拒绝；否决票 ｜ a. 没有；不是；绝非 ｜ adv. 不">no</span> <span class="w" data-i="lɒ:ntʃ" data-p="" data-c="n. 下水；汽艇；发射 ｜ vt. 使下水；发射；发动 ｜ vi. 起飞；下水；投入；开始">launch</span> <span class="w" data-i="deit" data-p="" data-c="n. 日期；约会；枣椰树 ｜ vt. 约会；定日期 ｜ vi. 注明日期；过时">date</span> <span class="w" data-i="ɒ:" data-p="" data-c="conj. 或；或者 ｜ [计] 或">or</span> <span class="w" data-i="prais" data-p="" data-c="n. 价格；代价；价值 ｜ vt. 定...的价格">price</span>, <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="pæk" data-p="" data-c="n. 包裹；一伙；一副；背包 ｜ vt. 包装；捆扎；塞满；压紧 ｜ vi. 包装货物；挤；群集；被包装">pack</span> <span class="w" data-i="twais" data-p="" data-c="adv. 两次；两倍">twice</span> <span class="w" data-i="æz" data-p="" data-c="adv. 同样地；例如 ｜ prep. 做为；当作 ｜ conj. 当...之时；以...的方式；像...一样；因为">as</span> <span class="w" data-i="&#x27;meni" data-p="" data-c="n. 多数；多数人 ｜ a. 许多的 ｜ pron. 许多">many</span> <span class="w" data-i="&#x27;mæɡnɪts" data-p="" data-c="n. 磁铁；磁体( magnet的复数形式 )；有吸引力的人[物]；磁石">magnets</span> <span class="w" data-i="&#x27;intu:" data-p="" data-c="prep. 进入...之内；朝...；深入...之中；成为...状况">into</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="&#x27;draivә" data-p="" data-c="[计] 驱动程序">drivers</span>, <span class="w" data-i="æd" data-p="" data-c="vt. 增加；添加；附带说明；计算...总和 ｜ vi. 做加法；积累而成；增添 ｜ [计] 加法">add</span> <span class="w" data-i="&#x27;æktiv" data-p="" data-c="a. 活跃的；起作用的；积极的；有效的 ｜ n. 主动语态；积极分子">active</span> <span class="w" data-i="nɒiz" data-p="" data-c="n. 噪音；杂音；响声；喧闹 ｜ vt. 谣传 ｜ vi. 喧闹">noise</span> <span class="w" data-i="kænsә&#x27;leiʃәn" data-p="" data-c="n. 取消；作废；注销戳 ｜ [经] 注销；取消；保险单的注销">cancellation</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="di&#x27;tætʃәbl" data-p="" data-c="a. 可分离的">detachable</span> <span class="w" data-i="bu:m" data-p="" data-c="n. 繁荣；隆隆声 ｜ vi. 急速发展；发隆隆声 ｜ vt. 使兴旺；发隆隆声">boom</span> <span class="w" data-i="" data-p="" data-c="[计] 介质接口；连接器">mic</span>, <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="in&#x27;klu:d" data-p="" data-c="vt. 包括；把...算入；包住 ｜ [计] DOS内部命令:在CONFIG.SYS文件的一个配置块中包含另一配置块的内容">include</span> <span class="w" data-i="geim" data-p="" data-c="n. 比赛；玩耍；比分；得胜 ｜ vi. 赌博 ｜ a. 勇敢的；有胆量的；关于野味的；跛的">game</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="tʃæt" data-p="" data-c="n. 闲谈 ｜ vi. 闲谈；聊天">chat</span> <span class="w" data-i="kәn&#x27;trәul" data-p="" data-c="n. 控制；控制元件；控制装置（control的复数）">controls</span>. <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">It</span> <span class="w" data-i="wil" data-p="" data-c="n. 意志；决心；意愿；意向 ｜ vt. 用意志的力量驱使；决意；愿意；立遗嘱 ｜ vi. 下决心；愿意">will</span> <span class="w" data-i="&#x27;kliәli" data-p="" data-c="adv. 清楚地">clearly</span> <span class="w" data-i="kɒst" data-p="" data-c="n. 代价；价值；费用 ｜ vi. 花费 ｜ vt. 使失去；值；使花费">cost</span> <span class="w" data-i="mɒ:" data-p="" data-c="n. 更多 ｜ a. 多的；程度较大的；更大的 ｜ adv. 多；更多；进一步">more</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>拥有 PlayStation Portal 掌机的用户可以直接连接 Pulse，完全不需要适配器。Pulse 也不是索尼唯一的新型号。Pulse Edge 至今没有公布上市日期和价格，但它会把驱动单元里的磁体数量翻倍，加入主动降噪和可拆卸悬臂麦克风，并提供游戏与语音聊天音量控制。它显然会更贵。</div></div></section><section class="segment" id="s6" data-seg="6"><header class="seg-head"><span class="seg-time">02:45</span><h2 class="seg-title"><b>06</b>The verdict</h2><button class="spk seg-play" type="button" aria-label="播放第 6 段"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/></svg><span class="label">Listen</span></button><audio class="pa" preload="none" src="/english-reading/qub2qw6b/audio/2026-11-12/b1-6.mp3"></audio></header><div class="seg-body"><p><span class="w" data-i="dʒʌdʒd" data-p="" data-c="判断正确的">Judged</span> <span class="w" data-i="&#x27;pjuәli" data-p="" data-c="adv. 纯粹地；清白地；贞洁地">purely</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 容貌；产品特点；特征；嘴脸（feature的复数）">features</span>, <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> $99 <span class="w" data-i="pʌls" data-p="" data-c="n. 脉冲；脉搏；情绪；意向 ｜ vi. 跳动；脉跳 ｜ vt. 使跳动；用脉冲调制">Pulse</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="lait" data-p="" data-c="n. 光；光亮；灯；日光 ｜ a. 轻的；少量的；轻微的；轻快的 ｜ vt. 点燃；照亮">light</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="&#x27;fi:tʃә" data-p="" data-c="n. 容貌；产品特点；特征；嘴脸（feature的复数）">features</span> <span class="w" data-i="kәm&#x27;pєә" data-p="" data-c="a. 比较的；对照的（compare的过去式和过去分词）">compared</span> <span class="w" data-i="wið" data-p="" data-c="prep. 和...在一起；以；由于">with</span> <span class="w" data-i="its" data-p="" data-c="pron. 它的">its</span> <span class="w" data-i="&#x27;raivəlz" data-p="" data-c="n. 竞争对手( rival的名词复数 )">rivals</span>. <span class="hard" data-cn="但索尼把预算花在音质和舒适度上的决定是合理的，因为这两点正是玩家每天都能感受到的东西。" data-an="主干是 the company&#x27;s decision makes sense。to spend the budget on ... 是不定式短语作 decision 的同位语（说明决定的内容）。because 引导原因状语从句，其中 players notice every single day 是省略关系词的定语从句修饰 the qualities。"><span class="w" data-i="jet" data-p="" data-c="adv. 还；尚；仍然；已经 ｜ conj. 然而">Yet</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;kʌmpәni" data-p="" data-c="n. 公司；友伴；交往；连队 ｜ vt. 陪伴 ｜ vi. 交往">company&#x27;s</span> <span class="w" data-i="di&#x27;siʒәn" data-p="" data-c="n. 决定；决心；决断 ｜ [计] 判定">decision</span> <span class="w" data-i="tu:" data-p="" data-c="prep. 到；向；趋于 ｜ adv. 向前">to</span> <span class="w" data-i="spend" data-p="" data-c="vt. 花费；浪费；度过；消耗 ｜ vi. 花费；用尽">spend</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="&#x27;bʌdʒit" data-p="" data-c="n. 预算 ｜ vi. 编预算 ｜ vt. 编入预算；安排">budget</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="saund" data-p="" data-c="n. 声音；语音；吵闹；声调 ｜ a. 健全的；可靠的；合理的；健康的 ｜ adv. 彻底地；充分地">sound</span> <span class="w" data-i="&#x27;kwɒlәti" data-p="" data-c="n. 品质；特性；才能；质量 ｜ a. 优质的 ｜ [计] 品质">quality</span> <span class="w" data-i="ænd" data-p="" data-c="conj. 和；与 ｜ [计] 与">and</span> <span class="w" data-i="&#x27;kʌmfәt" data-p="" data-c="n. 舒适；安慰；安慰者 ｜ vt. 安慰">comfort</span> <span class="w" data-i="meik" data-p="" data-c="v. 做；制作（make的第三人称单数）">makes</span> <span class="w" data-i="sens" data-p="" data-c="n. 感应；感觉；感官；意识 ｜ vt. 感觉；觉察；检测 ｜ [计] 阅读；检测">sense</span>, <span class="w" data-i="bi&#x27;kɒ:z" data-p="" data-c="conj. 因为">because</span> <span class="w" data-i="ðәuz" data-p="" data-c="pron. 那些">those</span> <span class="w" data-i="ɑ:" data-p="" data-c="be的现在时复数或第二人称单数">are</span> <span class="w" data-i="ðә" data-p="" data-c="art. 那">the</span> <span class="w" data-i="ˈkwɔlitiz" data-p="" data-c="n. 质( quality的名词复数 )；特点；品质；优点">qualities</span> <span class="w" data-i="&#x27;pleiә" data-p="" data-c="n. 队员；参与者；迷你音碟机；雷射唱盘（player的复数形式）">players</span> <span class="w" data-i="&#x27;nәutis" data-p="" data-c="n. 注意；布告；通知；预告 ｜ vt. 注意；通知；评论；提及 ｜ vi. 注意">notice</span> <span class="w" data-i="&#x27;evri" data-p="" data-c="a. 每一；所有的">every</span> <span class="w" data-i="&#x27;siŋgl" data-p="" data-c="a. 单身的；单程的；单一的；个别的 ｜ n. 一个；单打；单程票 ｜ vt. 选出">single</span> <span class="w" data-i="dei" data-p="" data-c="n. 天；日子；白天；工作日 ｜ [医] 日(一昼夜)；昼；白天">day</span>.</span><button class="hardmark" type="button" aria-label="查看长难句解析">析</button> <span class="w" data-i="fɒ:" data-p="" data-c="prep. 为；因为；至于 ｜ conj. 因为 ｜ [计] DOS批处理命令:对一组参数重复执行指定的命令">For</span> <span class="w" data-i="" data-p="" data-c="[计] 实际顺序；图象系统；电源；保护状态 ｜ [化] 磷脂酰丝氨酸">PS</span>5 <span class="w" data-i="&#x27;әunә" data-p="" data-c="n. 所有者；业主（owner的复数）">owners</span> <span class="w" data-i="ɒn" data-p="" data-c="prep. 在...之上 ｜ adv. ...上去 ｜ a. 正起作用的">on</span> <span class="w" data-i="ei" data-p="" data-c="第一个字母 A；一个；第一的\r ｜ art. [计] 累加器；加法器；地址；振幅">a</span> <span class="w" data-i="strikt" data-p="" data-c="a. 严厉的；绝对的；详尽的；严格的 ｜ [法] 严格的；精确的；绝对的">strict</span> <span class="w" data-i="&#x27;bʌdʒit" data-p="" data-c="n. 预算 ｜ vi. 编预算 ｜ vt. 编入预算；安排">budget</span>, <span class="w" data-i="it" data-p="" data-c="pron. 它 ｜ [计] 信息论；输入终端；智能终端；内捕获">it</span> <span class="w" data-i="iz" data-p="" data-c="be的现在式第三人称 ｜ [计] 加下标次序；信息系统；国际标准；中间系统">is</span> <span class="w" data-i="æn" data-p="" data-c="art. 一">an</span> <span class="w" data-i="&#x27;i:zi" data-p="" data-c="a. 容易的；缓缓的；舒适的；从容的 ｜ adv. 容易地；慢慢地">easy</span> <span class="w" data-i=".rekәmen&#x27;deiʃәn" data-p="" data-c="n. 推荐；介绍；推荐信；劝告 ｜ [经] 建议书">recommendation</span>.</p><div class="para-tools"><button class="trbtn" type="button" aria-expanded="false">译文</button></div><div class="trbox" hidden>如果只看功能清单，99 美元的 Pulse 相比同价位对手确实功能偏少。但索尼把预算花在音质和舒适度上的决定是合理的，因为这两点正是玩家每天都能感受到的东西。对于预算紧张的 PS5 用户来说，它是个很容易做出的推荐。</div></div></section>
+  </div>
+  <aside class="log" aria-label="听力笔记">
+    <div class="now">
+      <div class="now-kicker"><span class="dot"></span>Now playing</div>
+      <div class="now-title" id="nowTitle">Opening</div>
+      <div class="now-meta"><span id="nowTime">00:00</span><span id="nowSeg">SEG 01 / 06</span></div>
+      <div class="now-wave" aria-hidden="true"><i style="--h:4px;--d:0.00s"></i><i style="--h:9px;--d:0.10s"></i><i style="--h:14px;--d:0.20s"></i><i style="--h:7px;--d:0.30s"></i><i style="--h:12px;--d:0.40s"></i><i style="--h:5px;--d:0.50s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:15px;--d:0.10s"></i><i style="--h:8px;--d:0.20s"></i><i style="--h:13px;--d:0.30s"></i><i style="--h:6px;--d:0.40s"></i><i style="--h:11px;--d:0.50s"></i><i style="--h:4px;--d:0.00s"></i><i style="--h:9px;--d:0.10s"></i><i style="--h:14px;--d:0.20s"></i><i style="--h:7px;--d:0.30s"></i><i style="--h:12px;--d:0.40s"></i><i style="--h:5px;--d:0.50s"></i><i style="--h:10px;--d:0.00s"></i><i style="--h:15px;--d:0.10s"></i></div>
+    </div>
+    <h2>Listening notes</h2>
+    <h3>Key phrases</h3>
+    <div class="log-item"><div class="en">do everything at once</div><div class="cn">同时包办一切</div></div><div class="log-item"><div class="en">light on features</div><div class="cn">功能偏少</div></div><div class="log-item"><div class="en">spend the budget on</div><div class="cn">把预算花在……上</div></div><div class="log-item"><div class="en">in this price bracket</div><div class="cn">在这个价位区间</div></div>
+    <details class="gloss"><summary>生词速查 <span>7</span></summary><dl><div class="gloss-row"><dt>boom mic</dt><dd>悬臂麦克风（可伸到嘴边的麦克风）</dd></div><div class="gloss-row"><dt>dongle</dt><dd>无线适配器（插在设备上的小接收器）</dd></div><div class="gloss-row"><dt>equalizer</dt><dd>均衡器（调节各频段音量的设置）</dd></div><div class="gloss-row"><dt>give</dt><dd>弹性；回弹余地（此处为名词）</dd></div><div class="gloss-row"><dt>lossless</dt><dd>无损的（压缩后不损失音质）</dd></div><div class="gloss-row"><dt>planar magnetic drivers</dt><dd>平面磁驱动单元（高端耳机常用的一种发声单元）</dd></div><div class="gloss-row"><dt>shrill</dt><dd>尖厉刺耳的</dd></div></dl></details>
+    <h3>Yesterday</h3>
+    <ol class="review"><li class="review-item"><span class="idx">01</span><b>consecutive</b><span class="meaning">连续的（接连发生的）</span></li><li class="review-item"><span class="idx">02</span><b>projection</b><span class="meaning">预测；预计数字</span></li><li class="review-item"><span class="idx">03</span><b>unanimous</b><span class="meaning">一致同意的</span></li><li class="review-item"><span class="idx">04</span><b>speculative</b><span class="meaning">推测性的；投机性的</span></li><li class="review-item"><span class="idx">05</span><b>imprint</b><span class="meaning">印记；出版社品牌</span></li></ol>
+  </aside>
 </main>
-<footer class="bottom"><div class="bottom-in"><span class="brand">Daily English Reading</span><span>语音由系统朗读 · 英音优先</span><span>每日 22:00 更新</span></div></footer>
-<audio id="wy" preload="none"></audio>
+
+<footer class="foot"><span>NIGHT SIGNAL · DAILY ENGLISH READING</span><a href="/english-reading/qub2qw6b/archive/">Past episodes →</a><span>PHOTO — THE VERGE · THURSDAY, 12 NOVEMBER 2026</span></footer>
+<div class="player" aria-label="移动端播放控制">
+  <button class="player-play" id="mPlay" type="button" aria-label="播放全文">▶</button>
+  <div class="player-main">
+    <div class="player-top"><span id="mSeg">SEG 01</span><span id="mTime">00:00</span></div>
+    <div class="player-track"><span id="mProgress"></span></div>
+  </div>
+</div>
+
 <div id="pop" role="dialog" aria-label="单词与句子解析"><div class="pw"></div><div class="pi"></div><span class="pp"></span><div class="pc"></div>
 <div class="row"><button class="say" id="say" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6h2l3-2.5v9L5 10H3z"/><path d="M11 6.2c.8.8.8 2.8 0 3.6"/></svg>英音</button><button id="close" type="button">收起</button></div></div>
+<audio id="wy" preload="none"></audio>
 <script>
 (function(){
   var pop=document.getElementById('pop');
@@ -559,7 +623,7 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,3.5vw,52px);lin
     say.style.display='none';
     pi.textContent=''; pi.style.display='none';
     pp.textContent=''; pp.style.display='none';
-    pc.textContent=(el.getAttribute('data-cn')||'')+'\n\n'+(el.getAttribute('data-an')||'');
+    pc.textContent=(el.getAttribute('data-cn')||'')+'\\n\\n'+(el.getAttribute('data-an')||'');
     place(el);
   }
 
@@ -580,53 +644,105 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,3.5vw,52px);lin
   window.addEventListener('scroll', function(){ if(pop.classList.contains('show') && active){ place(active); } }, {passive:true});
   window.addEventListener('keydown',function(e){ if(e.key==='Escape'){ hide(); } });
 
-  var root=document.documentElement;
-  var themeBtn=document.getElementById('themeBtn');
-  var sizeBtn=document.getElementById('sizeBtn');
-  var prog=document.getElementById('progbar');
-  var metaTheme=document.querySelector('meta[name="theme-color"]');
-  var sizeSteps=['18px','19.5px','21px'];
-  var sizeNames=['小','标准','大'];
-  var sizeIdx=1;
-  try{
-    var sv=localStorage.getItem('readSize');
-    if(sv!==null){ var n=parseInt(sv,10); if(!isNaN(n)&&n>=0&&n<=2){ sizeIdx=n; root.style.setProperty('--read',sizeSteps[sizeIdx]); } }
-  }catch(e){}
-  function syncSize(){ if(sizeBtn){ sizeBtn.setAttribute('aria-label','字号：'+sizeNames[sizeIdx]+'，点击切换'); } }
-  if(sizeBtn){
-    syncSize();
-    sizeBtn.addEventListener('click',function(){
-      sizeIdx=(sizeIdx+1)%3;
-      root.style.setProperty('--read',sizeSteps[sizeIdx]);
-      syncSize();
-      try{ localStorage.setItem('readSize',String(sizeIdx)); }catch(e){}
-    });
-  }
-  function syncTheme(){
-    var dark=root.getAttribute('data-theme')==='dark';
-    if(themeBtn){ themeBtn.setAttribute('aria-label',dark?'切换到日间模式':'切换到夜间模式'); }
-    if(metaTheme){ metaTheme.setAttribute('content',dark?'#131210':'#F7F3EA'); }
-  }
-  if(themeBtn){
-    themeBtn.addEventListener('click',function(){
-      var dark=root.getAttribute('data-theme')==='dark';
-      root.setAttribute('data-theme',dark?'light':'dark');
-      try{ localStorage.setItem('theme',dark?'light':'dark'); }catch(e){}
-      syncTheme();
-    });
-  }
-  syncTheme();
-  function onScroll(){
-    if(!prog){ return; }
-    var d=document.documentElement;
-    var max=d.scrollHeight-window.innerHeight;
-    var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;
-    prog.style.transform='scaleX('+p+')';
-  }
-  window.addEventListener('scroll',onScroll,{passive:true});
-  window.addEventListener('resize',onScroll);
-  onScroll();
 
+
+})();
+</script>
+
+<script>
+(function(){
+  var audios=[].slice.call(document.querySelectorAll('audio.pa'));
+  var segs=[].slice.call(document.querySelectorAll('.segment'));
+  var tprog=document.getElementById('tprogress'), ttime=document.getElementById('ttime'), tseg=document.getElementById('tseg');
+  var pprog=document.getElementById('mProgress'), ptime=document.getElementById('mTime'), pseg=document.getElementById('mSeg');
+  var nowTitle=document.getElementById('nowTitle'), nowTime=document.getElementById('nowTime'), nowSeg=document.getElementById('nowSeg');
+  var speedBtn=document.getElementById('speed'), mPlay=document.getElementById('mPlay');
+  var heroBtn=document.querySelector('.hero-play'), transportBtn=document.querySelector('.transport-play');
+  var TOTAL_SECONDS=190;
+  var rate=0.9, current=0, playing=false;
+  function dur(a){ return (a && isFinite(a.duration) && a.duration>0) ? a.duration : (TOTAL_SECONDS/Math.max(1,audios.length)); }
+  function total(){ var t=0; audios.forEach(function(a){ t+=dur(a); }); return t; }
+  function elapsed(){ var t=0; for(var i=0;i<current;i++){ t+=dur(audios[i]); } var a=audios[current]; return t+(a?a.currentTime:0); }
+  function fmt(s){ s=Math.max(0,Math.floor(s)); var m=Math.floor(s/60), x=s%60; return (m<10?'0':'')+m+':'+(x<10?'0':'')+x; }
+  function pad(n){ return (n<10?'0':'')+n; }
+  function paint(){
+    var t=total(), e=elapsed(), pct=t?Math.min(100,e/t*100):0;
+    if(tprog) tprog.style.width=pct+'%';
+    if(pprog) pprog.style.width=pct+'%';
+    if(ttime) ttime.textContent=fmt(e)+' / '+fmt(t);
+    if(ptime) ptime.textContent=fmt(e);
+    if(tseg) tseg.textContent='SEG '+pad(current+1)+' / '+pad(audios.length);
+    if(pseg) pseg.textContent='SEG '+pad(current+1);
+    if(nowTime) nowTime.textContent=fmt(e);
+    if(nowSeg) nowSeg.textContent='SEG '+pad(current+1)+' / '+pad(audios.length);
+  }
+  function setActive(i,scroll){
+    current=Math.max(0,Math.min(i,segs.length-1));
+    segs.forEach(function(s,j){ s.classList.toggle('active', j===current); });
+    var t=segs[current]?segs[current].querySelector('.seg-title'):null;
+    if(nowTitle){ nowTitle.textContent=t?t.textContent.replace(/^\s*\d+\s*/,'').trim():'—'; }
+    paint();
+    if(scroll && segs[current]){ try{ segs[current].scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){ segs[current].scrollIntoView(); } }
+    updateButtons();
+  }
+  function updateButtons(){
+    document.body.classList.toggle('playing', playing);
+    segs.forEach(function(s,j){
+      var l=s.querySelector('.seg-play .label');
+      if(l) l.textContent=(playing && j===current)?'Pause':'Listen';
+      var svg=s.querySelector('.seg-play svg');
+      if(svg){ svg.innerHTML=(playing && j===current) ? '<rect x="2.4" y="1.4" width="2.6" height="9.2" fill="currentColor"/><rect x="7" y="1.4" width="2.6" height="9.2" fill="currentColor"/>' : '<path d="M3 1.4l7 4.6-7 4.6z" fill="currentColor"/>'; }
+      s.classList.toggle('playing', playing && j===current);
+    });
+    if(heroBtn){ var hl=heroBtn.querySelector('.lbl'); if(hl) hl.textContent=playing?'Pause':'Play transcript'; var hi=heroBtn.querySelector('.ico'); if(hi) hi.textContent=playing?'❚❚':'▶'; }
+    if(transportBtn){ var tt=transportBtn.querySelector('.txt'); if(tt) tt.textContent=playing?'Pause':'Play all'; var ic=transportBtn.querySelector('.ic'); if(ic) ic.textContent=playing?'❚❚':'▶'; }
+    if(mPlay) mPlay.textContent=playing?'❚❚':'▶';
+  }
+  function pauseAll(){ audios.forEach(function(a){ try{a.pause();}catch(e){} }); playing=false; updateButtons(); paint(); }
+  function playFrom(i,scroll){
+    audios.forEach(function(a){ try{a.pause();}catch(e){} });
+    current=Math.max(0,Math.min(i,audios.length-1));
+    playing=true;
+    setActive(current,scroll);
+    var a=audios[current];
+    if(!a){ playing=false; updateButtons(); return; }
+    try{ a.currentTime=0; a.playbackRate=rate; }catch(e){}
+    var p=a.play();
+    if(p && p.catch){ p.catch(function(){ playing=false; updateButtons(); paint(); }); }
+  }
+  function toggle(){
+    if(playing){ pauseAll(); return; }
+    var a=audios[current];
+    if(a && a.currentTime>0 && a.currentTime<dur(a)-0.15){ playing=true; a.playbackRate=rate; a.play(); updateButtons(); return; }
+    playFrom(current,false);
+  }
+  audios.forEach(function(a,i){
+    a.addEventListener('timeupdate',function(){ if(i===current){ paint(); } });
+    a.addEventListener('ended',function(){
+      if(!playing || i!==current) return;
+      if(i+1<audios.length){ playFrom(i+1,true); }
+      else { playing=false; updateButtons(); paint(); }
+    });
+  });
+  document.addEventListener('click',function(e){
+    var b=e.target.closest?e.target.closest('.seg-play'):null;
+    if(!b) return;
+    e.preventDefault(); e.stopPropagation();
+    var idx=segs.indexOf(b.closest('.segment'));
+    if(playing && idx===current){ pauseAll(); } else { playFrom(idx,false); }
+  },true);
+  if(heroBtn) heroBtn.addEventListener('click',toggle);
+  if(transportBtn) transportBtn.addEventListener('click',toggle);
+  if(mPlay) mPlay.addEventListener('click',toggle);
+  if(speedBtn){
+    speedBtn.addEventListener('click',function(){
+      rate = rate===0.9 ? 1.0 : (rate===1.0 ? 1.1 : 0.9);
+      speedBtn.textContent=rate.toFixed(1)+'×';
+      audios.forEach(function(a){ try{a.playbackRate=rate;}catch(e){} });
+    });
+    speedBtn.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); speedBtn.click(); } });
+  }
+  setActive(0,false); paint();
 })();
 </script>
 </body></html>
